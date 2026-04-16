@@ -1,0 +1,631 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>T4: Media Archive</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Outfit:wght@400;500;600;700&display=swap">
+  <link rel="stylesheet" href="design-system.css">
+</head>
+
+<body>
+
+  <a class="skip-link" href="#main-content">Skip to content</a>
+
+  <!-- ORGANISM: Global Navigation Header -->
+  <nav class="global-header">
+    <a class="global-header__logo" href="t1-homepage.html">
+      <span class="global-header__logo-text">Westside Baptist Church</span>
+    </a>
+    <div class="nav-link-group">
+      <div class="nav-item">
+        <a class="nav-link" href="t1-homepage.html">Welcome</a>
+      </div>
+      <div class="nav-item">
+        <a class="nav-link" href="t8-event-list.html">Events</a>
+      </div>
+      <div class="nav-item">
+        <a class="nav-link" href="t2-content.html">Worship</a>
+      </div>
+      <div class="nav-item">
+        <a class="nav-link active" href="t4-media.html">Sermon</a>
+      </div>
+      <div class="nav-item">
+        <a class="nav-link" href="#">
+          Ministries
+          <svg class="chevron" viewBox="0 0 10 6" fill="none" stroke="currentColor" stroke-width="1.5">
+            <path d="M1 1l4 4 4-4" />
+          </svg>
+        </a>
+        <div class="nav-dropdown">
+          <a class="nav-dropdown__link" href="t3-grid.html">Overview</a>
+          <div class="nav-dropdown__divider"></div>
+          <a class="nav-dropdown__link" href="t2-content.html">Small Groups</a>
+          <a class="nav-dropdown__link" href="t2-content.html">Youth Ministry</a>
+          <a class="nav-dropdown__link" href="t2-content.html">Children (CitRUs)</a>
+          <a class="nav-dropdown__link" href="t2-content.html">Prayer Ministry</a>
+          <a class="nav-dropdown__link" href="t2-content.html">Believer Education</a>
+          <a class="nav-dropdown__link" href="t2-dark.html">HK New Immigrant</a>
+        </div>
+      </div>
+      <div class="nav-item">
+        <a class="nav-link" href="#">
+          About
+          <svg class="chevron" viewBox="0 0 10 6" fill="none" stroke="currentColor" stroke-width="1.5">
+            <path d="M1 1l4 4 4-4" />
+          </svg>
+        </a>
+        <div class="nav-dropdown">
+          <a class="nav-dropdown__link" href="t2-content.html">About Us</a>
+          <a class="nav-dropdown__link" href="t5-team.html">Pastoral Team</a>
+          <a class="nav-dropdown__link" href="t2-content.html">Contact</a>
+          <a class="nav-dropdown__link" href="t2-content.html">Visit Us</a>
+        </div>
+      </div>
+      <div class="nav-item">
+        <a class="nav-link" href="#">
+          Connect
+          <svg class="chevron" viewBox="0 0 10 6" fill="none" stroke="currentColor" stroke-width="1.5">
+            <path d="M1 1l4 4 4-4" />
+          </svg>
+        </a>
+        <div class="nav-dropdown">
+          <a class="nav-dropdown__link" href="t9-news-list.html">News</a>
+          <a class="nav-dropdown__link" href="t6-form.html">Guest Form</a>
+          <a class="nav-dropdown__link" href="t7-member.html">Member Area</a>
+        </div>
+      </div>
+    </div>
+    <div class="global-header__actions">
+      <a class="btn-accent" href="t6-form.html">C.T.A</a>
+      <button class="btn-icon mobile-menu-toggle" aria-label="Open menu">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <path d="M3 12h18M3 6h18M3 18h18" />
+        </svg>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Fullscreen mobile navigation overlay -->
+  <div class="mobile-nav" id="mobileNav">
+    <div class="mobile-nav__header">
+      <img class="mobile-nav__logo" src="logo_light.png" alt="Westside Baptist Church">
+      <button class="mobile-nav__close" aria-label="Close menu">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <path d="M18 6L6 18M6 6l12 12" />
+        </svg>
+      </button>
+    </div>
+    <div class="mobile-nav__body">
+      <a class="mobile-nav__link" href="t1-homepage.html">Welcome</a>
+      <a class="mobile-nav__link" href="t8-event-list.html">Events</a>
+      <a class="mobile-nav__link" href="t2-content.html">Worship</a>
+      <a class="mobile-nav__link active" href="t4-media.html">Sermon</a>
+
+      <!-- Ministries accordion -->
+      <a class="mobile-nav__link" href="#">
+        Ministries
+        <svg class="chevron" viewBox="0 0 10 6" fill="none" stroke="currentColor" stroke-width="1.5">
+          <path d="M1 1l4 4 4-4" />
+        </svg>
+      </a>
+      <div class="mobile-nav__sub">
+        <a href="t3-grid.html">Overview</a>
+        <hr class="nav-dropdown__divider">
+        <a href="t2-content.html">Small Groups</a>
+        <a href="t2-content.html">Youth Ministry</a>
+        <a href="t2-content.html">Children (CitRUs)</a>
+        <a href="t2-content.html">Prayer Ministry</a>
+        <a href="t2-content.html">Believer Education</a>
+        <a href="t2-dark.html">HK New Immigrant</a>
+      </div>
+
+      <!-- About accordion -->
+      <a class="mobile-nav__link" href="#">
+        About
+        <svg class="chevron" viewBox="0 0 10 6" fill="none" stroke="currentColor" stroke-width="1.5">
+          <path d="M1 1l4 4 4-4" />
+        </svg>
+      </a>
+      <div class="mobile-nav__sub">
+        <a href="t2-content.html">About Us</a>
+        <a href="t5-team.html">Pastoral Team</a>
+        <a href="t2-content.html">Contact</a>
+        <a href="t2-content.html">Visit Us</a>
+      </div>
+
+      <!-- Connect accordion -->
+      <a class="mobile-nav__link" href="#">
+        Connect
+        <svg class="chevron" viewBox="0 0 10 6" fill="none" stroke="currentColor" stroke-width="1.5">
+          <path d="M1 1l4 4 4-4" />
+        </svg>
+      </a>
+      <div class="mobile-nav__sub">
+        <a href="t9-news-list.html">News</a>
+        <a href="t6-form.html">Guest Form</a>
+        <a href="t7-member.html">Member Area</a>
+      </div>
+    </div>
+    <div class="mobile-nav__footer">
+      <a class="btn-accent" href="t6-form.html">C.T.A</a>
+    </div>
+  </div>
+
+  <!-- ============================================================
+       ORGANISM: Hero Banner (Internal - 40vh)
+       ============================================================ -->
+  <header class="hero-banner"
+    style="background-image: url('https://images.unsplash.com/photo-1507692049790-de58290a4334?w=1920&q=80');"
+    id="main-content">
+    <div class="hero-banner__overlay"></div>
+    <div class="hero-banner__content">
+      <h1 class="page-title">T4: Media(Audio) Archive [CMS]</h1>
+      <p class="body-text">Specialized listing and playback for audio and video content. Each card includes an embedded
+        player with notes and download actions.</p>
+    </div>
+  </header>
+  <div class="hero-subtitle-mobile">
+    <p class="body-text">Specialized listing and playback for audio and video content. Each card includes an embedded
+      player with notes and download actions.</p>
+  </div>
+
+  <!-- ============================================================
+       T4: GLOBAL AUDIO PLAYER BAR (sticky, subnav-area)
+       Hidden by default. Appears when any sermon card is played.
+       ============================================================ -->
+  <div class="media-player-bar" id="mediaPlayerBar">
+    <div class="media-player-bar__inner">
+      <div class="player-controls">
+        <button class="btn-rewind" id="btnRewind" aria-label="Rewind 10 seconds">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+            stroke-linejoin="round">
+            <path d="M1 4v6h6" />
+            <path d="M3.51 15a9 9 0 105.64-8.36L1 10" />
+          </svg>
+          <span class="rewind-label">10</span>
+        </button>
+        <button class="btn-play-pause" id="btnPlayPause" aria-label="Play">
+          <svg class="icon-play" viewBox="0 0 24 24" fill="currentColor">
+            <path d="M8 5v14l11-7z" />
+          </svg>
+          <svg class="icon-pause" viewBox="0 0 24 24" fill="currentColor" style="display:none">
+            <path d="M6 4h4v16H6zM14 4h4v16h-4z" />
+          </svg>
+        </button>
+      </div>
+      <div class="player-info">
+        <span class="player-info__title" id="playerTitle">—</span>
+        <span class="player-info__subtitle" id="playerSubtitle">—</span>
+      </div>
+      <div class="player-timeline">
+        <span class="player-time" id="playerCurrentTime">0:00</span>
+        <div class="player-progress-track" id="progressTrack">
+          <div class="player-progress-fill" id="progressFill">
+            <div class="player-progress-thumb" id="progressThumb"></div>
+          </div>
+        </div>
+        <span class="player-time" id="playerDuration">0:00</span>
+      </div>
+    </div>
+    <audio id="globalAudio" preload="metadata"></audio>
+  </div>
+
+  <!-- ============================================================
+       T4-SPECIFIC: Media Archive Card Grid
+       Thumbnail = play trigger. No in-card audio element.
+       ============================================================ -->
+  <div class="grid-header">
+    <h2 class="section-title">Recent Sermons</h2>
+    <p class="body-text">Browse our collection of over 200 sermon recordings. Each sermon is available for streaming and
+      download.</p>
+  </div>
+
+  <div class="grid-container">
+
+    <!-- Audio Card 1 -->
+    <div class="card-media" data-src="https://music.wixstatic.com/mp3/99203c_0b56fe0972cf4096b32f04dc4e2a9f25.mp3"
+      data-title="Easter 2nd Sunday Service" data-subtitle="April 14, 2026 · Rev. Dr. Alan Yu">
+      <div class="card-media__thumb-wrap">
+        <img class="card-media__image" src="https://images.unsplash.com/photo-1504052434569-70ad5836ab65?w=800&q=80"
+          alt="Worship service with warm lighting" loading="lazy" decoding="async">
+        <div class="card-media__play-overlay">
+          <svg viewBox="0 0 24 24" fill="currentColor">
+            <path d="M8 5v14l11-7z" />
+          </svg>
+        </div>
+        <div class="card-media__audio-indicator">
+          <div class="audio-bars"><span></span><span></span><span></span><span></span><span></span></div>
+          <svg class="card-media__pause-icon" viewBox="0 0 48 48" width="48" height="48" fill="currentColor">
+            <rect x="14" y="12" width="7" height="24" rx="2" />
+            <rect x="27" y="12" width="7" height="24" rx="2" />
+          </svg>
+        </div>
+      </div>
+      <div class="card-media__content">
+        <span class="meta-text">April 14, 2026 &middot; Rev. Dr. Alan Yu</span>
+        <h3 class="card-title">Easter 2nd Sunday Service</h3>
+        <span class="badge">Easter Series</span>
+        <div class="btn-group">
+          <a class="btn-outline" href="#sermon-notes.pdf" target="_blank">Notes</a>
+          <a class="btn-outline" href="#sermon.mp3" download>Download</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Audio Card 2 -->
+    <div class="card-media" data-src="https://music.wixstatic.com/mp3/99203c_0b56fe0972cf4096b32f04dc4e2a9f25.mp3"
+      data-title="Easter Sunday Celebration" data-subtitle="April 12, 2026 · Pastor Mark Wong">
+      <div class="card-media__thumb-wrap">
+        <img class="card-media__image" src="https://images.unsplash.com/photo-1445108771252-d1f2fd83b00c?w=800&q=80"
+          alt="Bible open on a podium" loading="lazy" decoding="async">
+        <div class="card-media__play-overlay">
+          <svg viewBox="0 0 24 24" fill="currentColor">
+            <path d="M8 5v14l11-7z" />
+          </svg>
+        </div>
+        <div class="card-media__audio-indicator">
+          <div class="audio-bars"><span></span><span></span><span></span><span></span><span></span></div>
+          <svg class="card-media__pause-icon" viewBox="0 0 48 48" width="48" height="48" fill="currentColor">
+            <rect x="14" y="12" width="7" height="24" rx="2" />
+            <rect x="27" y="12" width="7" height="24" rx="2" />
+          </svg>
+        </div>
+      </div>
+      <div class="card-media__content">
+        <span class="meta-text">April 12, 2026 &middot; Pastor Mark Wong</span>
+        <h3 class="card-title">Easter Sunday Celebration</h3>
+        <span class="badge">Easter Series</span>
+        <div class="btn-group">
+          <a class="btn-outline" href="#sermon-notes.pdf" target="_blank">Notes</a>
+          <a class="btn-outline" href="#sermon.mp3" download>Download</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Audio Card 3 -->
+    <div class="card-media" data-src="https://music.wixstatic.com/mp3/99203c_0b56fe0972cf4096b32f04dc4e2a9f25.mp3"
+      data-title="Good Friday Reflection" data-subtitle="April 5, 2026 · Rev. Dr. Gladys Tsang">
+      <div class="card-media__thumb-wrap">
+        <img class="card-media__image" src="https://images.unsplash.com/photo-1504052434569-70ad5836ab65?w=800&q=80"
+          alt="Sanctuary with soft lighting" loading="lazy" decoding="async">
+        <div class="card-media__play-overlay">
+          <svg viewBox="0 0 24 24" fill="currentColor">
+            <path d="M8 5v14l11-7z" />
+          </svg>
+        </div>
+        <div class="card-media__audio-indicator">
+          <div class="audio-bars"><span></span><span></span><span></span><span></span><span></span></div>
+          <svg class="card-media__pause-icon" viewBox="0 0 48 48" width="48" height="48" fill="currentColor">
+            <rect x="14" y="12" width="7" height="24" rx="2" />
+            <rect x="27" y="12" width="7" height="24" rx="2" />
+          </svg>
+        </div>
+      </div>
+      <div class="card-media__content">
+        <span class="meta-text">April 5, 2026 &middot; Rev. Dr. Gladys Tsang</span>
+        <h3 class="card-title">Good Friday Reflection</h3>
+        <span class="badge">Lent Series</span>
+        <div class="btn-group">
+          <a class="btn-outline" href="#sermon-notes.pdf" target="_blank">Notes</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Audio Card 4 -->
+    <div class="card-media" data-src="https://music.wixstatic.com/mp3/99203c_0b56fe0972cf4096b32f04dc4e2a9f25.mp3"
+      data-title="Palm Sunday Message" data-subtitle="March 29, 2026 · Rev. Dr. Alan Yu">
+      <div class="card-media__thumb-wrap">
+        <img class="card-media__image" src="https://images.unsplash.com/photo-1445108771252-d1f2fd83b00c?w=800&q=80"
+          alt="Cross silhouette against sky" loading="lazy" decoding="async">
+        <div class="card-media__play-overlay">
+          <svg viewBox="0 0 24 24" fill="currentColor">
+            <path d="M8 5v14l11-7z" />
+          </svg>
+        </div>
+        <div class="card-media__audio-indicator">
+          <div class="audio-bars"><span></span><span></span><span></span><span></span><span></span></div>
+          <svg class="card-media__pause-icon" viewBox="0 0 48 48" width="48" height="48" fill="currentColor">
+            <rect x="14" y="12" width="7" height="24" rx="2" />
+            <rect x="27" y="12" width="7" height="24" rx="2" />
+          </svg>
+        </div>
+      </div>
+      <div class="card-media__content">
+        <span class="meta-text">March 29, 2026 &middot; Rev. Dr. Alan Yu</span>
+        <h3 class="card-title">Palm Sunday Message</h3>
+        <span class="badge">Lent Series</span>
+        <div class="btn-group">
+          <a class="btn-outline" href="#sermon-notes.pdf" target="_blank">Notes</a>
+          <a class="btn-outline" href="#sermon.mp3" download>Download</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Audio Card 5 -->
+    <div class="card-media" data-src="https://music.wixstatic.com/mp3/99203c_0b56fe0972cf4096b32f04dc4e2a9f25.mp3"
+      data-title="Kingdom Commitment" data-subtitle="March 22, 2026 · Pastor Mark Wong">
+      <div class="card-media__thumb-wrap">
+        <img class="card-media__image" src="https://images.unsplash.com/photo-1504052434569-70ad5836ab65?w=800&q=80"
+          alt="Congregation listening to sermon" loading="lazy" decoding="async">
+        <div class="card-media__play-overlay">
+          <svg viewBox="0 0 24 24" fill="currentColor">
+            <path d="M8 5v14l11-7z" />
+          </svg>
+        </div>
+        <div class="card-media__audio-indicator">
+          <div class="audio-bars"><span></span><span></span><span></span><span></span><span></span></div>
+          <svg class="card-media__pause-icon" viewBox="0 0 48 48" width="48" height="48" fill="currentColor">
+            <rect x="14" y="12" width="7" height="24" rx="2" />
+            <rect x="27" y="12" width="7" height="24" rx="2" />
+          </svg>
+        </div>
+      </div>
+      <div class="card-media__content">
+        <span class="meta-text">March 22, 2026 &middot; Pastor Mark Wong</span>
+        <h3 class="card-title">Kingdom Commitment</h3>
+        <span class="badge">Kingdom Series</span>
+        <div class="btn-group">
+          <a class="btn-outline" href="#sermon-notes.pdf" target="_blank">Notes</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Audio Card 6 -->
+    <div class="card-media" data-src="https://music.wixstatic.com/mp3/99203c_0b56fe0972cf4096b32f04dc4e2a9f25.mp3"
+      data-title="Kingdom Declaration" data-subtitle="March 15, 2026 · Guest Speaker">
+      <div class="card-media__thumb-wrap">
+        <img class="card-media__image" src="https://images.unsplash.com/photo-1445108771252-d1f2fd83b00c?w=800&q=80"
+          alt="Bible study materials on a table" loading="lazy" decoding="async">
+        <div class="card-media__play-overlay">
+          <svg viewBox="0 0 24 24" fill="currentColor">
+            <path d="M8 5v14l11-7z" />
+          </svg>
+        </div>
+        <div class="card-media__audio-indicator">
+          <div class="audio-bars"><span></span><span></span><span></span><span></span><span></span></div>
+          <svg class="card-media__pause-icon" viewBox="0 0 48 48" width="48" height="48" fill="currentColor">
+            <rect x="14" y="12" width="7" height="24" rx="2" />
+            <rect x="27" y="12" width="7" height="24" rx="2" />
+          </svg>
+        </div>
+      </div>
+      <div class="card-media__content">
+        <span class="meta-text">March 15, 2026 &middot; Guest Speaker</span>
+        <h3 class="card-title">Kingdom Declaration</h3>
+        <span class="badge">Kingdom Series</span>
+        <div class="btn-group">
+          <a class="btn-outline" href="#sermon-notes.pdf" target="_blank">Notes</a>
+          <a class="btn-outline" href="#sermon.mp3" download>Download</a>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- Load More (pagination pattern) -->
+  <div class="load-more-wrapper">
+    <a class="btn-outline" href="#">Load More Sermons</a>
+  </div>
+
+  <!-- ORGANISM: Site Footer -->
+  <footer class="site-footer">
+    <div class="site-footer__inner">
+      <div class="site-footer__brand">
+        <img class="site-footer__logo" src="logo_light.png" alt="Westside Baptist Church logo">
+        <h4>Westside Baptist Church</h4>
+        <p class="body-text-sm">8506 Ash Street, Vancouver, BC V6P 3M2</p>
+        <div class="site-footer__util">
+          <a href="https://maps.google.com/?q=8506+Ash+Street+Vancouver+BC" target="_blank"><svg viewBox="0 0 16 16"
+              fill="none" stroke="currentColor" stroke-width="1.5">
+              <path d="M8 2a4 4 0 014 4c0 3-4 7-4 7s-4-4-4-7a4 4 0 014-4z" />
+              <circle cx="8" cy="6" r="1.5" />
+            </svg> Get Directions</a>
+          <a href="#"><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5">
+              <rect x="2" y="5" width="12" height="8" rx="1" />
+              <path d="M5 5V4a3 3 0 016 0v1" />
+            </svg> Parking Info</a>
+        </div>
+        <p class="body-text-sm">A young, vibrant, dynamic and friendly church serving the multicultural population in
+          Vancouver.</p>
+      </div>
+      <div class="site-footer__links">
+        <h4>Quick Links</h4>
+        <a href="t4-media.html">Sermons</a>
+        <a href="t8-event-list.html">Events</a>
+        <a href="t7-member.html">Member Area</a>
+        <a href="t2-content.html">About Us</a>
+        <a href="t6-form.html">Give</a>
+      </div>
+      <div class="site-footer__contact">
+        <h4>Contact Us</h4>
+        <p class="body-text-sm">info@westsidebaptist.ca</p>
+        <p class="body-text-sm">604-266-5602</p>
+        <p class="body-text-sm site-footer__office-hours">Office Hours:<br>Tue-Fri 10am-6pm<br>Sat 10am-4pm</p>
+        <div class="site-footer__social">
+          <a href="https://facebook.com/westsidebaptist.ca" target="_blank" aria-label="Facebook"><svg
+              viewBox="0 0 24 24" fill="currentColor">
+              <path
+                d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z" />
+            </svg></a>
+          <a href="https://instagram.com/westsidebaptist" target="_blank" aria-label="Instagram"><svg
+              viewBox="0 0 24 24" fill="currentColor">
+              <path
+                d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z" />
+            </svg></a>
+        </div>
+      </div>
+    </div>
+    <div class="site-footer__bottom">
+      <p class="caption">&copy; 2026 Westside Baptist Church. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script defer src="ui-components.js"></script>
+
+  <!-- T4 Media Player Logic -->
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const audio = document.getElementById('globalAudio');
+      const bar = document.getElementById('mediaPlayerBar');
+      const btnPlay = document.getElementById('btnPlayPause');
+      const btnRewind = document.getElementById('btnRewind');
+      const iconPlay = btnPlay.querySelector('.icon-play');
+      const iconPause = btnPlay.querySelector('.icon-pause');
+      const titleEl = document.getElementById('playerTitle');
+      const subtitleEl = document.getElementById('playerSubtitle');
+      const curTimeEl = document.getElementById('playerCurrentTime');
+      const durEl = document.getElementById('playerDuration');
+      const track = document.getElementById('progressTrack');
+      const fill = document.getElementById('progressFill');
+      const cards = document.querySelectorAll('.card-media[data-src]');
+
+      let activeCard = null;
+      let isDragging = false;
+
+      // --- Helpers ---
+      function fmt(s) {
+        if (!s || isNaN(s)) return '0:00';
+        const m = Math.floor(s / 60);
+        const sec = Math.floor(s % 60);
+        return m + ':' + String(sec).padStart(2, '0');
+      }
+
+      function setPlayIcon(playing) {
+        iconPlay.style.display = playing ? 'none' : '';
+        iconPause.style.display = playing ? '' : 'none';
+        btnPlay.setAttribute('aria-label', playing ? 'Pause' : 'Play');
+      }
+
+      function clearCardStates() {
+        cards.forEach(c => c.classList.remove('is-playing', 'is-paused-focus'));
+      }
+
+      function checkMarquee(el) {
+        el.classList.toggle('is-overflowing', el.scrollWidth > el.clientWidth);
+      }
+
+      // --- Load & play a card ---
+      function loadCard(card) {
+        const src = card.dataset.src;
+        const title = card.dataset.title;
+        const subtitle = card.dataset.subtitle;
+        const isSame = activeCard === card;
+
+        if (isSame && !audio.paused) {
+          // pause
+          audio.pause();
+          return;
+        }
+        if (isSame && audio.paused) {
+          // resume
+          audio.play();
+          return;
+        }
+
+        // new track
+        activeCard = card;
+        audio.src = src;
+
+        titleEl.textContent = title;
+        subtitleEl.textContent = subtitle;
+        bar.classList.add('is-active');
+
+        // play() returns a promise — auto-buffers and starts when ready
+        audio.play().catch(() => {
+          // autoplay blocked — show paused state, user can tap bar play
+          clearCardStates();
+          if (activeCard) activeCard.classList.add('is-paused-focus');
+          setPlayIcon(false);
+        });
+
+        checkMarquee(titleEl);
+        checkMarquee(subtitleEl);
+      }
+
+      // --- Card click (thumbnail = trigger) ---
+      cards.forEach(card => {
+        const thumbWrap = card.querySelector('.card-media__thumb-wrap');
+        if (!thumbWrap) return;
+        thumbWrap.addEventListener('click', (e) => {
+          e.preventDefault();
+          e.stopPropagation();
+          loadCard(card);
+        });
+      });
+
+      // --- Audio events ---
+      audio.addEventListener('play', () => {
+        setPlayIcon(true);
+        clearCardStates();
+        if (activeCard) activeCard.classList.add('is-playing');
+      });
+      audio.addEventListener('pause', () => {
+        setPlayIcon(false);
+        clearCardStates();
+        if (activeCard) activeCard.classList.add('is-paused-focus');
+      });
+      audio.addEventListener('ended', () => {
+        setPlayIcon(false);
+        clearCardStates();
+        fill.style.width = '0%';
+      });
+      audio.addEventListener('loadedmetadata', () => {
+        durEl.textContent = fmt(audio.duration);
+      });
+      audio.addEventListener('timeupdate', () => {
+        if (isDragging) return;
+        const pct = audio.duration ? (audio.currentTime / audio.duration) * 100 : 0;
+        fill.style.width = pct + '%';
+        curTimeEl.textContent = fmt(audio.currentTime);
+      });
+
+      // --- Player bar controls ---
+      btnPlay.addEventListener('click', () => {
+        if (!audio.src || !activeCard) return;
+        audio.paused ? audio.play() : audio.pause();
+      });
+      btnRewind.addEventListener('click', () => {
+        audio.currentTime = Math.max(0, audio.currentTime - 10);
+      });
+
+      // --- Draggable progress bar ---
+      function seek(e) {
+        const rect = track.getBoundingClientRect();
+        const x = Math.min(Math.max(0, e.clientX - rect.left), rect.width);
+        const pct = x / rect.width;
+        fill.style.width = (pct * 100) + '%';
+        audio.currentTime = pct * (audio.duration || 0);
+        curTimeEl.textContent = fmt(audio.currentTime);
+      }
+
+      track.addEventListener('mousedown', (e) => { isDragging = true; seek(e); });
+      document.addEventListener('mousemove', (e) => { if (isDragging) seek(e); });
+      document.addEventListener('mouseup', () => { isDragging = false; });
+
+      // Touch support
+      track.addEventListener('touchstart', (e) => {
+        isDragging = true;
+        seek(e.touches[0]);
+      }, { passive: true });
+      document.addEventListener('touchmove', (e) => {
+        if (isDragging) seek(e.touches[0]);
+      }, { passive: true });
+      document.addEventListener('touchend', () => { isDragging = false; });
+
+      // --- Warn before navigating away while audio is playing ---
+      window.addEventListener('beforeunload', (e) => {
+        if (!audio.paused) {
+          e.preventDefault();
+        }
+      });
+    });
+  </script>
+
+</body>
+
+</html>

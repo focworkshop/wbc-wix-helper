@@ -1,0 +1,594 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>T7: Member Area</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Outfit:wght@400;500;600;700&display=swap">
+  <link rel="stylesheet" href="design-system.css">
+</head>
+
+<body class="theme-dark">
+
+  <a class="skip-link" href="#main-content">Skip to content</a>
+
+  <!-- ORGANISM: Global Navigation Header -->
+  <nav class="global-header">
+    <a class="global-header__logo" href="t1-homepage.html">
+      <span class="global-header__logo-text">Westside Baptist Church</span>
+    </a>
+    <div class="nav-link-group">
+      <div class="nav-item">
+        <a class="nav-link" href="t1-homepage.html">Welcome</a>
+      </div>
+      <div class="nav-item">
+        <a class="nav-link" href="t8-event-list.html">Events</a>
+      </div>
+      <div class="nav-item">
+        <a class="nav-link" href="t2-content.html">Worship</a>
+      </div>
+      <div class="nav-item">
+        <a class="nav-link" href="t4-media.html">Sermon</a>
+      </div>
+      <div class="nav-item">
+        <a class="nav-link" href="#">
+          Ministries
+          <svg class="chevron" viewBox="0 0 10 6" fill="none" stroke="currentColor" stroke-width="1.5">
+            <path d="M1 1l4 4 4-4" />
+          </svg>
+        </a>
+        <div class="nav-dropdown">
+          <a class="nav-dropdown__link" href="t3-grid.html">Overview</a>
+          <div class="nav-dropdown__divider"></div>
+          <a class="nav-dropdown__link" href="t2-content.html">Small Groups</a>
+          <a class="nav-dropdown__link" href="t2-content.html">Youth Ministry</a>
+          <a class="nav-dropdown__link" href="t2-content.html">Children (CitRUs)</a>
+          <a class="nav-dropdown__link" href="t2-content.html">Prayer Ministry</a>
+          <a class="nav-dropdown__link" href="t2-content.html">Believer Education</a>
+          <a class="nav-dropdown__link" href="t2-dark.html">HK New Immigrant</a>
+        </div>
+      </div>
+      <div class="nav-item">
+        <a class="nav-link" href="#">
+          About
+          <svg class="chevron" viewBox="0 0 10 6" fill="none" stroke="currentColor" stroke-width="1.5">
+            <path d="M1 1l4 4 4-4" />
+          </svg>
+        </a>
+        <div class="nav-dropdown">
+          <a class="nav-dropdown__link" href="t2-content.html">About Us</a>
+          <a class="nav-dropdown__link" href="t5-team.html">Pastoral Team</a>
+          <a class="nav-dropdown__link" href="t2-content.html">Contact</a>
+          <a class="nav-dropdown__link" href="t2-content.html">Visit Us</a>
+        </div>
+      </div>
+      <div class="nav-item">
+        <a class="nav-link" href="#">
+          Connect
+          <svg class="chevron" viewBox="0 0 10 6" fill="none" stroke="currentColor" stroke-width="1.5">
+            <path d="M1 1l4 4 4-4" />
+          </svg>
+        </a>
+        <div class="nav-dropdown">
+          <a class="nav-dropdown__link" href="t9-news-list.html">News</a>
+          <a class="nav-dropdown__link" href="t6-form.html">Guest Form</a>
+          <a class="nav-dropdown__link" href="t7-member.html">Member Area</a>
+        </div>
+      </div>
+    </div>
+    <div class="global-header__actions">
+      <a class="btn-accent" href="t6-form.html">C.T.A</a>
+      <button class="btn-icon mobile-menu-toggle" aria-label="Open menu">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <path d="M3 12h18M3 6h18M3 18h18" />
+        </svg>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Fullscreen mobile navigation overlay -->
+  <div class="mobile-nav" id="mobileNav">
+    <div class="mobile-nav__header">
+      <img class="mobile-nav__logo" src="logo_light.png" alt="Westside Baptist Church">
+      <button class="mobile-nav__close" aria-label="Close menu">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <path d="M18 6L6 18M6 6l12 12" />
+        </svg>
+      </button>
+    </div>
+    <div class="mobile-nav__body">
+      <a class="mobile-nav__link" href="t1-homepage.html">Welcome</a>
+      <a class="mobile-nav__link" href="t8-event-list.html">Events</a>
+      <a class="mobile-nav__link" href="t2-content.html">Worship</a>
+      <a class="mobile-nav__link" href="t4-media.html">Sermon</a>
+
+      <!-- Ministries accordion -->
+      <a class="mobile-nav__link" href="#">
+        Ministries
+        <svg class="chevron" viewBox="0 0 10 6" fill="none" stroke="currentColor" stroke-width="1.5">
+          <path d="M1 1l4 4 4-4" />
+        </svg>
+      </a>
+      <div class="mobile-nav__sub">
+        <a href="t3-grid.html">Overview</a>
+        <hr class="nav-dropdown__divider">
+        <a href="t2-content.html">Small Groups</a>
+        <a href="t2-content.html">Youth Ministry</a>
+        <a href="t2-content.html">Children (CitRUs)</a>
+        <a href="t2-content.html">Prayer Ministry</a>
+        <a href="t2-content.html">Believer Education</a>
+        <a href="t2-dark.html">HK New Immigrant</a>
+      </div>
+
+      <!-- About accordion -->
+      <a class="mobile-nav__link" href="#">
+        About
+        <svg class="chevron" viewBox="0 0 10 6" fill="none" stroke="currentColor" stroke-width="1.5">
+          <path d="M1 1l4 4 4-4" />
+        </svg>
+      </a>
+      <div class="mobile-nav__sub">
+        <a href="t2-content.html">About Us</a>
+        <a href="t5-team.html">Pastoral Team</a>
+        <a href="t2-content.html">Contact</a>
+        <a href="t2-content.html">Visit Us</a>
+      </div>
+
+      <!-- Connect accordion -->
+      <a class="mobile-nav__link" href="#">
+        Connect
+        <svg class="chevron" viewBox="0 0 10 6" fill="none" stroke="currentColor" stroke-width="1.5">
+          <path d="M1 1l4 4 4-4" />
+        </svg>
+      </a>
+      <div class="mobile-nav__sub">
+        <a href="t9-news-list.html">News</a>
+        <a href="t6-form.html">Guest Form</a>
+        <a href="t7-member.html">Member Area</a>
+      </div>
+    </div>
+    <div class="mobile-nav__footer">
+      <a class="btn-accent" href="t6-form.html">C.T.A</a>
+    </div>
+  </div>
+
+  <!-- ============================================================
+       ORGANISM: Hero Banner (Internal - 40vh)
+       ============================================================ -->
+  <header class="hero-banner"
+    style="background-image: url('https://images.unsplash.com/photo-1438232992991-995b7058bbb3?w=1920&q=80');"
+    id="main-content">
+    <div class="hero-banner__overlay"></div>
+    <div class="hero-banner__content">
+      <h1 class="page-title">T7: Member Area [Shared]</h1>
+      <p class="body-text">Authenticated member dashboard with governance info, documents, and quick links. Requires
+        login to access.</p>
+    </div>
+  </header>
+  <div class="hero-subtitle-mobile">
+    <p class="body-text">Authenticated member dashboard with governance info, documents, and quick links. Requires login
+      to access.</p>
+  </div>
+
+  <!-- ============================================================
+       ORGANISM: Section Sub-Navigation (sticky, horizontally scrollable)
+       ============================================================ -->
+  <nav class="section-subnav" id="sectionSubnav">
+    <div class="section-subnav__track">
+      <a class="section-subnav__link active" href="#serving-duties">Serving Duties</a>
+      <a class="section-subnav__link" href="#useful-links">Useful Links</a>
+      <a class="section-subnav__link" href="#members-documents">Member's Documents</a>
+      <a class="section-subnav__link" href="#deacon-board">Deacon Board</a>
+      <a class="section-subnav__link" href="#board-portfolio">Board Portfolio</a>
+      <a class="section-subnav__link" href="#admin-staff">Admin Staff</a>
+    </div>
+  </nav>
+
+  <!-- ============================================================
+       T7-SPECIFIC: Member Area
+       Uses theme-dark on body; content uses standard organisms.
+       ============================================================ -->
+  <main class="member-area">
+
+    <!-- ============================================================
+         SECTION: Serving Duties
+         4 sub-groups displayed as link cards
+         ============================================================ -->
+    <section class="member-section" id="serving-duties">
+      <h2 class="section-title">Serving Duties 事奉輪值</h2>
+
+      <div class="grid-container grid-container--4col">
+
+        <a class="card-link card-link--clickable" href="#" target="_blank">
+          <h3 class="card-link__title">Citrus</h3>
+          <span class="card-link__arrow">
+            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M5 10h10M11 6l4 4-4 4" />
+            </svg>
+          </span>
+        </a>
+
+        <a class="card-link card-link--clickable" href="#" target="_blank">
+          <h3 class="card-link__title">CM Hospitality 招待</h3>
+          <span class="card-link__arrow">
+            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M5 10h10M11 6l4 4-4 4" />
+            </svg>
+          </span>
+        </a>
+
+        <a class="card-link card-link--clickable" href="#" target="_blank">
+          <h3 class="card-link__title">EM Praise Team</h3>
+          <span class="card-link__arrow">
+            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M5 10h10M11 6l4 4-4 4" />
+            </svg>
+          </span>
+        </a>
+
+        <a class="card-link card-link--clickable" href="#" target="_blank">
+          <h3 class="card-link__title">CM Praise Team 敬拜隊</h3>
+          <span class="card-link__arrow">
+            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M5 10h10M11 6l4 4-4 4" />
+            </svg>
+          </span>
+        </a>
+
+      </div>
+    </section>
+
+    <!-- ============================================================
+         SECTION: Useful Links
+         ============================================================ -->
+    <section class="text-block text-block--wide" id="useful-links">
+      <h2 class="section-title">Useful Links 實用連結</h2>
+      <p class="body-text">Frequently visited links for our members</p>
+
+      <div class="grid-container grid-container--4col grid-container--flush">
+
+        <div class="card-link">
+          <h3 class="card-link__title">Room Use Schedule<br>房間使用表</h3>
+          <div class="card-link__list">
+            <a href="#" target="_blank">Click here</a>
+          </div>
+        </div>
+
+        <div class="card-link">
+          <h3 class="card-link__title">Worship Duties<br>崇拜職務</h3>
+          <div class="card-link__list">
+            <a href="#" target="_blank">CM Saturday</a>
+            <a href="#" target="_blank">CM Sunday</a>
+          </div>
+        </div>
+
+        <div class="card-link">
+          <h3 class="card-link__title">Praise Team Resources<br>敬拜隊資源</h3>
+          <div class="card-link__list">
+            <a href="#" target="_blank">Song Index</a>
+            <a href="#" target="_blank">Praise History</a>
+          </div>
+        </div>
+
+        <div class="card-link">
+          <h3 class="card-link__title">Library Index<br>圖書索引</h3>
+          <div class="card-link__list">
+            <a href="#" target="_blank">Click here</a>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ============================================================
+         SECTION: Member's Documents
+         ============================================================ -->
+    <section class="text-block text-block--wide" id="members-documents">
+      <h2 class="section-title">Member's Documents</h2>
+      <p class="body-text">Important information for our members</p>
+
+      <div class="grid-container grid-container--4col grid-container--flush">
+
+        <div class="card-document">
+          <svg class="card-document__icon" viewBox="0 0 80 80" fill="none" stroke="var(--color-coral)"
+            stroke-width="2.5">
+            <rect x="15" y="10" width="40" height="55" rx="4" />
+            <path d="M25 30h20M25 40h20M25 50h12" />
+            <path d="M50 55l8 8" stroke-width="3" />
+          </svg>
+          <h3 class="card-document__title">Member's Handbook</h3>
+          <div class="card-document__links">
+            <a class="btn-outline" href="#" target="_blank">English</a>
+            <a class="btn-outline" href="#" target="_blank">會友手冊</a>
+          </div>
+        </div>
+
+        <div class="card-document">
+          <svg class="card-document__icon" viewBox="0 0 80 80" fill="none" stroke="var(--color-coral)"
+            stroke-width="2.5">
+            <rect x="15" y="10" width="40" height="55" rx="4" />
+            <path d="M25 25h8v10h-8zM38 25h12M38 30h8M25 45h25M25 55h18" />
+          </svg>
+          <h3 class="card-document__title">Annual Reports</h3>
+          <div class="card-document__links">
+            <a class="btn-outline" href="#" target="_blank">English</a>
+            <a class="btn-outline" href="#" target="_blank">年報</a>
+          </div>
+        </div>
+
+        <div class="card-document">
+          <svg class="card-document__icon" viewBox="0 0 80 80" fill="none" stroke="var(--color-coral)"
+            stroke-width="2.5">
+            <path d="M20 55V25l10-10h25v40H20z" />
+            <path d="M20 25h10V15" />
+            <circle cx="38" cy="40" r="8" />
+            <path d="M38 36v8M34 40h8" />
+          </svg>
+          <h3 class="card-document__title">Parking Info</h3>
+          <div class="card-document__links">
+            <a class="btn-outline" href="#" target="_blank">English</a>
+            <a class="btn-outline" href="#" target="_blank">泊車須知</a>
+          </div>
+        </div>
+
+        <div class="card-document">
+          <svg class="card-document__icon" viewBox="0 0 80 80" fill="none" stroke="var(--color-coral)"
+            stroke-width="2.5">
+            <circle cx="40" cy="30" r="15" />
+            <path d="M30 52c0-5.5 4.5-10 10-10s10 4.5 10 10" />
+            <path d="M25 60h30" />
+          </svg>
+          <h3 class="card-document__title">Privacy Policy</h3>
+          <div class="card-document__links">
+            <a class="btn-outline" href="#" target="_blank">English</a>
+            <a class="btn-outline" href="#" target="_blank">隱私政策</a>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <hr class="divider divider--wide">
+
+    <!-- ============================================================
+         SECTION: Deacon Board
+         MOLECULE: profile-bio--compact (2-column grid)
+         ============================================================ -->
+    <section class="member-section" id="deacon-board">
+      <h2 class="section-title">Deacon Board &#x57F7;&#x4E8B;&#x6703;</h2>
+
+      <div class="grid-container grid-container--4col grid-container--2col-mobile">
+
+        <div class="profile-bio profile-bio--compact">
+          <img class="img-profile" src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=400&q=80"
+            alt="Dick Chan headshot" loading="lazy" decoding="async">
+          <h3 class="profile-name">&#x9673;&#x9298;&#x751F; Dick Chan</h3>
+          <span class="meta-text">Jan 2025 - Dec 2027</span>
+        </div>
+
+        <div class="profile-bio profile-bio--compact">
+          <img class="img-profile" src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&q=80"
+            alt="Michael Chau headshot" loading="lazy" decoding="async">
+          <h3 class="profile-name">&#x6731;&#x74A3; Michael Chau</h3>
+          <span class="meta-text">Jan 2024 - Dec 2026</span>
+        </div>
+
+        <div class="profile-bio profile-bio--compact">
+          <img class="img-profile" src="https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?w=400&q=80"
+            alt="Jason Kwok headshot" loading="lazy" decoding="async">
+          <h3 class="profile-name">&#x90ED;&#x9298;&#x93D7; Jason Kwok</h3>
+          <span class="meta-text">Jan 2025 - Dec 2027</span>
+        </div>
+
+        <div class="profile-bio profile-bio--compact">
+          <img class="img-profile" src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=400&q=80"
+            alt="Carson Lai headshot" loading="lazy" decoding="async">
+          <h3 class="profile-name">&#x9ECE;&#x5609;&#x8072; Carson Lai</h3>
+          <span class="meta-text">Jan 2026 - Dec 2028</span>
+        </div>
+
+        <div class="profile-bio profile-bio--compact">
+          <img class="img-profile" src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=400&q=80"
+            alt="Winnie Mak headshot" loading="lazy" decoding="async">
+          <h3 class="profile-name">&#x9EA5;&#x8449;&#x61FF;&#x7B60; Winnie Mak</h3>
+          <span class="meta-text">Jan 2024 - Dec 2026</span>
+        </div>
+
+        <div class="profile-bio profile-bio--compact">
+          <img class="img-profile" src="https://images.unsplash.com/photo-1580489944761-15a19d654956?w=400&q=80"
+            alt="Arlene Manaloto headshot" loading="lazy" decoding="async">
+          <h3 class="profile-name">Arlene Manaloto</h3>
+          <span class="meta-text">Jan 2025 - Dec 2027</span>
+        </div>
+
+        <div class="profile-bio profile-bio--compact">
+          <img class="img-profile" src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?w=400&q=80"
+            alt="Monica Tong headshot" loading="lazy" decoding="async">
+          <h3 class="profile-name">&#x6E6F;&#x6DD1;&#x5A9B; Monica Tong</h3>
+          <span class="meta-text">Jan 2025 - Dec 2027</span>
+        </div>
+
+        <div class="profile-bio profile-bio--compact">
+          <img class="img-profile" src="https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?w=400&q=80"
+            alt="Edward Yan headshot" loading="lazy" decoding="async">
+          <h3 class="profile-name">&#x7504;&#x68A3;&#x6A11; Edward Yan</h3>
+          <span class="meta-text">Jan 2024 - Dec 2026</span>
+        </div>
+
+        <div class="profile-bio profile-bio--compact">
+          <img class="img-profile" src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&q=80"
+            alt="Jackson Yu headshot" loading="lazy" decoding="async">
+          <h3 class="profile-name">&#x4F59;&#x4FCA;&#x6717; Jackson Yu</h3>
+          <span class="meta-text">Jan 2025 - Dec 2027</span>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ============================================================
+         SECTION: Board Portfolio
+         Bilingual two-column nested list of responsibilities
+         ============================================================ -->
+    <section class="member-section" id="board-portfolio">
+      <h2 class="section-title">The Board Portfolio &#x57F7;&#x4E8B;&#x6703;&#x8077;&#x8CAC;</h2>
+
+      <div class="member-section__columns">
+        <!-- Chinese column -->
+        <div>
+          <ul class="body-list">
+            <li><strong>&#x4E3B;&#x8981;&#x8077;&#x8CAC;&#xFF1A;</strong>
+              <ul class="body-list">
+                <li>&#x8A2D;&#x65BD;&#xFF1A;
+                  <ul class="body-list">
+                    <li>&#x7DAD;&#x4FEE; -
+                      &#x5EFA;&#x7BC9;&#x7269;&#x53CA;&#x8A2D;&#x65BD;&#xFF1A;&#x9673;&#x9298;&#x751F;</li>
+                    <li>&#x7DAD;&#x4FEE; - &#x4FDD;&#x990A;&#x8207;&#x8CFC;&#x7F6E;&#xFF1A;&#x6731;&#x74A3;</li>
+                    <li>&#x8CC7;&#x7522;&#x7BA1;&#x7406;&#x8207;&#x898F;&#x5283;&#xFF1A;&#x9EA5;&#x8449;&#x61FF;&#x7B60;
+                    </li>
+                    <li>&#x5F71;&#x97F3;&#x7CFB;&#x7D71;&#xFF1A;&#x4F59;&#x4FCA;&#x6717;</li>
+                    <li>&#x8CC7;&#x8A0A;&#x79D1;&#x6280;&#xFF1A;&#x9ECE;&#x5609;&#x8072;</li>
+                  </ul>
+                </li>
+                <li>&#x904B;&#x4F5C;&#xFF1A;
+                  <ul class="body-list">
+                    <li>&#x4FDD;&#x96AA;&#xFF1A;&#x6E6F;&#x6DD1;&#x5A9B;</li>
+                    <li>&#x4FDD;&#x5B89;&#xFF1A;&#x90ED;&#x9298;&#x93D7;</li>
+                    <li>&#x793E;&#x4EA4;&#x5A92;&#x9AD4;&#xFF1A;Arlene Manaloto</li>
+                    <li>&#x5B88;&#x5247;&#x8207;&#x653F;&#x7B56;&#xFF1A;&#x7504;&#x68A3;&#x6A11;</li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+        <!-- English column -->
+        <div>
+          <ul class="body-list">
+            <li><strong>Primary Portfolio:</strong>
+              <ul class="body-list">
+                <li>Facility:
+                  <ul class="body-list">
+                    <li>Maintenance - building &amp; fixtures: Dick Chan</li>
+                    <li>Maintenance - upkeep &amp; purchase: Michael Chau</li>
+                    <li>Asset Management &amp; Planning: Winnie Mak</li>
+                    <li>Audio &amp; Visual Systems: Jackson Yu</li>
+                    <li>Information Technology: Carson Lai</li>
+                  </ul>
+                </li>
+                <li>Operations:
+                  <ul class="body-list">
+                    <li>Insurance: Monica Tong</li>
+                    <li>Security: Jason Kwok</li>
+                    <li>Social Media: Arlene Manaloto</li>
+                    <li>Protocol &amp; Policy: Edward Yan</li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         SECTION: Administrative Staff
+         MOLECULE: profile-bio--compact (2-column grid, smaller set)
+         ============================================================ -->
+    <section class="member-section" id="admin-staff">
+      <h2 class="section-title">Administrator, Treasurer, Bookkeeper &amp; Clerk</h2>
+
+      <div class="grid-container grid-container--4col grid-container--2col-mobile">
+
+        <div class="profile-bio profile-bio--compact">
+          <img class="img-profile" src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=400&q=80"
+            alt="Roberta Luk headshot" loading="lazy" decoding="async">
+          <h3 class="profile-name">&#x9678;&#x654F;&#x73CA; Roberta Luk</h3>
+          <span class="meta-text">&#x884C;&#x653F;&#x5E79;&#x4E8B; Administrator</span>
+        </div>
+
+        <div class="profile-bio profile-bio--compact">
+          <img class="img-profile" src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&q=80"
+            alt="Jason Lam headshot" loading="lazy" decoding="async">
+          <h3 class="profile-name">&#x6797;&#x6587;&#x4FCA; Jason Lam</h3>
+          <span class="meta-text">&#x53F8;&#x5EAB; Treasurer</span>
+        </div>
+
+        <div class="profile-bio profile-bio--compact">
+          <img class="img-profile" src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?w=400&q=80"
+            alt="Lauren Wong headshot" loading="lazy" decoding="async">
+          <h3 class="profile-name">&#x9EC3;&#x6708;&#x83C1; Lauren Wong</h3>
+          <span class="meta-text">&#x7C3F;&#x8A18; Bookkeeper</span>
+        </div>
+
+        <div class="profile-bio profile-bio--compact">
+          <img class="img-profile" src="https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?w=400&q=80"
+            alt="Justin Chen headshot" loading="lazy" decoding="async">
+          <h3 class="profile-name">&#x9673;&#x6B63; Justin Chen</h3>
+          <span class="meta-text">&#x6559;&#x6703;&#x6587;&#x66F8; Church Clerk</span>
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="site-footer__inner">
+      <div class="site-footer__brand">
+        <img class="site-footer__logo" src="logo_light.png" alt="Westside Baptist Church logo">
+        <h4>Westside Baptist Church</h4>
+        <p class="body-text-sm">8506 Ash Street, Vancouver, BC V6P 3M2</p>
+        <div class="site-footer__util">
+          <a href="https://maps.google.com/?q=8506+Ash+Street+Vancouver+BC" target="_blank"><svg viewBox="0 0 16 16"
+              fill="none" stroke="currentColor" stroke-width="1.5">
+              <path d="M8 2a4 4 0 014 4c0 3-4 7-4 7s-4-4-4-7a4 4 0 014-4z" />
+              <circle cx="8" cy="6" r="1.5" />
+            </svg> Get Directions</a>
+          <a href="#"><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5">
+              <rect x="2" y="5" width="12" height="8" rx="1" />
+              <path d="M5 5V4a3 3 0 016 0v1" />
+            </svg> Parking Info</a>
+        </div>
+        <p class="body-text-sm">A young, vibrant, dynamic and friendly church serving the multicultural population in
+          Vancouver.</p>
+      </div>
+      <div class="site-footer__links">
+        <h4>Quick Links</h4>
+        <a href="t4-media.html">Sermons</a>
+        <a href="t8-event-list.html">Events</a>
+        <a href="t7-member.html">Member Area</a>
+        <a href="t2-content.html">About Us</a>
+        <a href="t6-form.html">Give</a>
+      </div>
+      <div class="site-footer__contact">
+        <h4>Contact Us</h4>
+        <p class="body-text-sm">info@westsidebaptist.ca</p>
+        <p class="body-text-sm">604-266-5602</p>
+        <p class="body-text-sm site-footer__office-hours">Office Hours:<br>Tue-Fri 10am-6pm<br>Sat 10am-4pm</p>
+        <div class="site-footer__social">
+          <a href="https://facebook.com/westsidebaptist.ca" target="_blank" aria-label="Facebook"><svg
+              viewBox="0 0 24 24" fill="currentColor">
+              <path
+                d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z" />
+            </svg></a>
+          <a href="https://instagram.com/westsidebaptist" target="_blank" aria-label="Instagram"><svg
+              viewBox="0 0 24 24" fill="currentColor">
+              <path
+                d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z" />
+            </svg></a>
+        </div>
+      </div>
+    </div>
+    <div class="site-footer__bottom">
+      <p class="caption">&copy; 2026 Westside Baptist Church. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script defer src="ui-components.js"></script>
+</body>
+
+</html>

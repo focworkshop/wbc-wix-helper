@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>T2: 簡約內容版面</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Outfit:wght@400;500;600;700&display=swap">
+  <link rel="stylesheet" href="design-system.css">
+</head>
+
+<body>
+
+  <a class="skip-link" href="#main-content">跳至主要內容</a>
+
+  <!-- ORGANISM: Global Navigation Header -->
+  <nav class="global-header">
+    <a class="global-header__logo" href="t1-homepage.html">
+      <span class="global-header__logo-text">西區浸信會</span>
+    </a>
+    <div class="nav-link-group">
+      <div class="nav-item">
+        <a class="nav-link" href="t1-homepage.html">歡迎</a>
+      </div>
+      <div class="nav-item">
+        <a class="nav-link" href="t8-event-list.html">活動</a>
+      </div>
+      <div class="nav-item">
+        <a class="nav-link active" href="t2-content-zh.html">崇拜</a>
+      </div>
+      <div class="nav-item">
+        <a class="nav-link" href="t4-media.html">講道</a>
+      </div>
+      <div class="nav-item">
+        <a class="nav-link" href="#">
+          事工
+          <svg class="chevron" viewBox="0 0 10 6" fill="none" stroke="currentColor" stroke-width="1.5">
+            <path d="M1 1l4 4 4-4" />
+          </svg>
+        </a>
+        <div class="nav-dropdown">
+          <a class="nav-dropdown__link" href="t3-grid.html">總覽</a>
+          <div class="nav-dropdown__divider"></div>
+          <a class="nav-dropdown__link" href="t2-content-zh.html">小組團契</a>
+          <a class="nav-dropdown__link" href="t2-content-zh.html">青少年事工</a>
+          <a class="nav-dropdown__link" href="t2-content-zh.html">兒童事工 (CitRUs)</a>
+          <a class="nav-dropdown__link" href="t2-content-zh.html">禱告事工</a>
+          <a class="nav-dropdown__link" href="t2-content-zh.html">信徒教育</a>
+          <a class="nav-dropdown__link" href="t2-dark.html">T2-Dark Theme</a>
+        </div>
+      </div>
+      <div class="nav-item">
+        <a class="nav-link" href="#">
+          關於我們
+          <svg class="chevron" viewBox="0 0 10 6" fill="none" stroke="currentColor" stroke-width="1.5">
+            <path d="M1 1l4 4 4-4" />
+          </svg>
+        </a>
+        <div class="nav-dropdown">
+          <a class="nav-dropdown__link" href="t2-content-zh.html">關於我們</a>
+          <a class="nav-dropdown__link" href="t5-team.html">教牧團隊</a>
+          <a class="nav-dropdown__link" href="t2-content-zh.html">聯絡我們</a>
+          <a class="nav-dropdown__link" href="t2-content-zh.html">前來探訪</a>
+        </div>
+      </div>
+      <div class="nav-item">
+        <a class="nav-link" href="#">
+          連結
+          <svg class="chevron" viewBox="0 0 10 6" fill="none" stroke="currentColor" stroke-width="1.5">
+            <path d="M1 1l4 4 4-4" />
+          </svg>
+        </a>
+        <div class="nav-dropdown">
+          <a class="nav-dropdown__link" href="t9-news-list.html">最新消息</a>
+          <a class="nav-dropdown__link" href="t6-form.html">訪客表格</a>
+          <a class="nav-dropdown__link" href="t7-member.html">會員專區</a>
+        </div>
+      </div>
+    </div>
+    <div class="global-header__actions">
+      <a class="btn-accent" href="t6-form.html">行動呼籲</a>
+      <button class="btn-icon mobile-menu-toggle" aria-label="開啟選單">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <path d="M3 12h18M3 6h18M3 18h18" />
+        </svg>
+      </button>
+    </div>
+  </nav>
+
+  <!-- 全螢幕手機導航覆蓋層 -->
+  <div class="mobile-nav" id="mobileNav">
+    <div class="mobile-nav__header">
+      <img class="mobile-nav__logo" src="logo_light.png" alt="西區浸信會">
+      <button class="mobile-nav__close" aria-label="關閉選單">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <path d="M18 6L6 18M6 6l12 12" />
+        </svg>
+      </button>
+    </div>
+    <div class="mobile-nav__body">
+      <a class="mobile-nav__link" href="t1-homepage.html">歡迎</a>
+      <a class="mobile-nav__link" href="t8-event-list.html">活動</a>
+      <a class="mobile-nav__link active" href="t2-content-zh.html">崇拜</a>
+      <a class="mobile-nav__link" href="t4-media.html">講道</a>
+
+      <!-- 事工手風琴 -->
+      <a class="mobile-nav__link" href="#">
+        事工
+        <svg class="chevron" viewBox="0 0 10 6" fill="none" stroke="currentColor" stroke-width="1.5">
+          <path d="M1 1l4 4 4-4" />
+        </svg>
+      </a>
+      <div class="mobile-nav__sub">
+        <a href="t3-grid.html">總覽</a>
+        <hr class="nav-dropdown__divider">
+        <a href="t2-content-zh.html">小組團契</a>
+        <a href="t2-content-zh.html">青少年事工</a>
+        <a href="t2-content-zh.html">兒童事工 (CitRUs)</a>
+        <a href="t2-content-zh.html">禱告事工</a>
+        <a href="t2-content-zh.html">信徒教育</a>
+        <a href="t2-dark.html">T2-Dark Theme</a>
+      </div>
+
+      <!-- 關於我們手風琴 -->
+      <a class="mobile-nav__link" href="#">
+        關於我們
+        <svg class="chevron" viewBox="0 0 10 6" fill="none" stroke="currentColor" stroke-width="1.5">
+          <path d="M1 1l4 4 4-4" />
+        </svg>
+      </a>
+      <div class="mobile-nav__sub">
+        <a href="t2-content-zh.html">關於我們</a>
+        <a href="t5-team.html">教牧團隊</a>
+        <a href="t2-content-zh.html">聯絡我們</a>
+        <a href="t2-content-zh.html">前來探訪</a>
+      </div>
+
+      <!-- 連結手風琴 -->
+      <a class="mobile-nav__link" href="#">
+        連結
+        <svg class="chevron" viewBox="0 0 10 6" fill="none" stroke="currentColor" stroke-width="1.5">
+          <path d="M1 1l4 4 4-4" />
+        </svg>
+      </a>
+      <div class="mobile-nav__sub">
+        <a href="t9-news-list.html">最新消息</a>
+        <a href="t6-form.html">訪客表格</a>
+        <a href="t7-member.html">會員專區</a>
+      </div>
+    </div>
+    <div class="mobile-nav__footer">
+      <a class="btn-accent" href="t6-form.html">行動呼籲</a>
+    </div>
+  </div>
+
+  <!-- ============================================================
+       ORGANISM: Hero Banner (Internal - 40vh)
+       T2 使用較矮的橫幅，僅顯示標題（無行動呼籲按鈕）
+       ============================================================ -->
+  <header class="hero-banner"
+    style="background-image: url('https://images.unsplash.com/photo-1438232992991-995b7058bbb3?w=1920&q=80');"
+    id="main-content">
+    <div class="hero-banner__overlay"></div>
+    <div class="hero-banner__content">
+      <h1 class="page-title">T2: 簡約內容版面 [動態/CMS]</h1>
+      <p class="body-text">通用資訊頁面，適用於敘述性內容、事工介紹、活動詳情及公告。</p>
+    </div>
+  </header>
+  <div class="hero-subtitle-mobile">
+    <p class="body-text">通用資訊頁面，適用於敘述性內容、事工介紹、活動詳情及公告。</p>
+  </div>
+
+  <!-- ============================================================
+       ORGANISM: Text Block
+       全寬置中閱讀區塊，適用於長篇內容。
+       用於問候語、信函、介紹文字。
+       ============================================================ -->
+  <section class="text-block">
+    <h2 class="section-title">奉主耶穌基督的名向您問安</h2>
+    <p class="body-text">我謹代表西區浸信會，誠摯歡迎您來到我們教會的網頁，非常高興您透過這個媒介來認識我們。我們祈願您能透過網站的內容更深入地了解我們。</p>
+    <p class="body-text">西區浸信會不僅僅是一間教會，更是一個基督徒社群、一個基督徒家庭。西區是一群委身、有感染力、與時代接軌的年輕基督徒所組成的群體。我們存在的目的是帶領人歸向基督，幫助他們在信仰中成長成熟，並裝備他們在社群中事奉祂。</p>
+    <p class="body-text">我們誠邀那些尋找人生意義、渴望在基督裡成長、或正在溫哥華尋找教會家園的朋友前來探訪。您會在這裡找到一個溫暖、熱情、愛神愛人的群體。</p>
+  </section>
+
+  <!-- ============================================================
+       ORGANISM: Split Content Block
+       雙欄版面：左側圖片 + 右側文字。
+       T2 頁面的主力區塊。
+       ============================================================ -->
+  <section class="split-content">
+    <div class="split-content__media">
+      <img class="img-cover" src="https://images.unsplash.com/photo-1511632765486-a01980e01a18?w=800&q=80"
+        alt="教會社群在教會外聚集" loading="lazy" decoding="async">
+    </div>
+    <div class="split-content__text">
+      <h2 class="section-title">主日崇拜</h2>
+      <p class="body-text">每個主日，我們聚集在一起敬拜、學習和團契。為了服事我們多元的社群，我們提供英語和粵語兩堂崇拜。</p>
+      <ul class="body-list">
+        <li>英語崇拜：上午 9:00</li>
+        <li>粵語崇拜：上午 11:00</li>
+        <li>主日學：上午 10:15</li>
+        <li>兒童節目：於所有崇拜時段同步進行</li>
+      </ul>
+      <a class="btn-outline" href="t6-form.html">填寫訪客卡</a>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       ORGANISM: Split Content Block (Reversed)
+       右側圖片 + 左側文字。交替版面以增加視覺變化。
+       ============================================================ -->
+  <section class="split-content split-content--reverse">
+    <div class="split-content__media">
+      <img class="img-cover" src="https://images.unsplash.com/photo-1504052434569-70ad5836ab65?w=800&q=80"
+        alt="崇拜期間的教會聖堂內部" loading="lazy" decoding="async">
+    </div>
+    <div class="split-content__text">
+      <h2 class="section-title">崇拜須知</h2>
+      <p class="body-text">我們的敬拜風格是現代化的，由樂隊和敬拜團帶領，涵蓋從現代到傳統的多元詩歌選曲。我們使用多媒體設備，包括視覺輔助、影片及數碼圖片來輔助敬拜，但我們深知敬拜的關鍵在於心靈和誠實。</p>
+      <p class="body-text">教會周圍提供路邊停車位。我們已準備了停車地圖，為初次到訪的朋友提供實用資訊。</p>
+      <a class="btn-outline" href="#">下載停車地圖 (PDF)</a>
+    </div>
+  </section>
+
+  <hr class="divider divider--wide">
+
+  <!-- ============================================================
+       ORGANISM: Text Block（第二個實例）
+       示範堆疊功能：T2 允許多個文字區塊
+       ============================================================ -->
+  <section class="text-block">
+    <h2 class="section-title">我們的使命：W.E.S.T. 與 S.I.D.E.</h2>
+    <p class="body-text"><strong>W</strong>orship（敬拜）— 在切合文化的處境中敬拜神。
+      <strong>E</strong>vangelize（傳福音）— 透過個人生活方式和整個基督徒社群傳揚福音。
+      <strong>S</strong>hare（分享）— 透過小組分享我們的愛。
+      <strong>T</strong>each（教導）— 教導神的話語作為生命的權威。
+    </p>
+    <p class="body-text"><strong>S</strong>end（差遣）— 差派人進入世界，完成大使命。
+      <strong>I</strong>ntegrate（融合）— 將信仰融入日常生活，成為祂的見證人。
+      <strong>D</strong>evelop（發展）— 策略性地發展新的事工模式，推進祂的國度。
+      <strong>E</strong>quip（裝備）— 裝備信徒承擔事工，使全體發揮功能。
+    </p>
+  </section>
+
+  <!-- ORGANISM: Site Footer -->
+  <footer class="site-footer">
+    <div class="site-footer__inner">
+      <div class="site-footer__brand">
+        <img class="site-footer__logo" src="logo_light.png" alt="西區浸信會標誌">
+        <h4>西區浸信會</h4>
+        <p class="body-text-sm">8506 Ash Street, Vancouver, BC V6P 3M2</p>
+        <div class="site-footer__util">
+          <a href="https://maps.google.com/?q=8506+Ash+Street+Vancouver+BC" target="_blank"><svg viewBox="0 0 16 16"
+              fill="none" stroke="currentColor" stroke-width="1.5">
+              <path d="M8 2a4 4 0 014 4c0 3-4 7-4 7s-4-4-4-7a4 4 0 014-4z" />
+              <circle cx="8" cy="6" r="1.5" />
+            </svg> 取得路線</a>
+          <a href="#"><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5">
+              <rect x="2" y="5" width="12" height="8" rx="1" />
+              <path d="M5 5V4a3 3 0 016 0v1" />
+            </svg> 停車資訊</a>
+        </div>
+        <p class="body-text-sm">一間年輕、充滿活力、活潑友善的教會，服事溫哥華多元文化的社群。</p>
+      </div>
+      <div class="site-footer__links">
+        <h4>快速連結</h4>
+        <a href="t4-media.html">講道</a>
+        <a href="t8-event-list.html">活動</a>
+        <a href="t7-member.html">會員專區</a>
+        <a href="t2-content-zh.html">關於我們</a>
+        <a href="t6-form.html">奉獻</a>
+      </div>
+      <div class="site-footer__contact">
+        <h4>聯絡我們</h4>
+        <p class="body-text-sm">info@westsidebaptist.ca</p>
+        <p class="body-text-sm">604-266-5602</p>
+        <p class="body-text-sm site-footer__office-hours">辦公時間：<br>週二至週五 10am-6pm<br>週六 10am-4pm</p>
+        <div class="site-footer__social">
+          <a href="https://facebook.com/westsidebaptist.ca" target="_blank" aria-label="Facebook"><svg
+              viewBox="0 0 24 24" fill="currentColor">
+              <path
+                d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z" />
+            </svg></a>
+          <a href="https://instagram.com/westsidebaptist" target="_blank" aria-label="Instagram"><svg
+              viewBox="0 0 24 24" fill="currentColor">
+              <path
+                d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z" />
+            </svg></a>
+        </div>
+      </div>
+    </div>
+    <div class="site-footer__bottom">
+      <p class="caption">&copy; 2026 Westside Baptist Church. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script defer src="ui-components.js"></script>
+
+</body>
+
+</html>

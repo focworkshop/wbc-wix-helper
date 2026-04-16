@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>T1: Homepage / Aggregator</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Outfit:wght@400;500;600;700&display=swap">
+  <link rel="stylesheet" href="design-system.css">
+</head>
+
+<body>
+
+  <a class="skip-link" href="#main-content">Skip to content</a>
+
+  <!-- ============================================================
+       ORGANISM: Global Navigation Header
+       Desktop: hover submenus  |  Mobile: fullscreen overlay
+       ============================================================ -->
+  <nav class="global-header">
+    <a class="global-header__logo" href="t1-homepage.html">
+      <span class="global-header__logo-text">Westside Baptist Church</span>
+    </a>
+
+    <!-- Desktop nav with dropdown submenus -->
+    <div class="nav-link-group">
+      <div class="nav-item">
+        <a class="nav-link active" href="t1-homepage.html">Welcome</a>
+      </div>
+      <div class="nav-item">
+        <a class="nav-link" href="t8-event-list.html">Events</a>
+      </div>
+      <div class="nav-item">
+        <a class="nav-link" href="t2-content.html">Worship</a>
+      </div>
+      <div class="nav-item">
+        <a class="nav-link" href="t4-media.html">Sermon</a>
+      </div>
+      <div class="nav-item">
+        <a class="nav-link" href="#">
+          Ministries
+          <svg class="chevron" viewBox="0 0 10 6" fill="none" stroke="currentColor" stroke-width="1.5">
+            <path d="M1 1l4 4 4-4" />
+          </svg>
+        </a>
+        <div class="nav-dropdown">
+          <a class="nav-dropdown__link" href="t3-grid.html">Overview</a>
+          <div class="nav-dropdown__divider"></div>
+          <a class="nav-dropdown__link" href="t2-content.html">Small Groups</a>
+          <a class="nav-dropdown__link" href="t2-content.html">Youth Ministry</a>
+          <a class="nav-dropdown__link" href="t2-content.html">Children (CitRUs)</a>
+          <a class="nav-dropdown__link" href="t2-content.html">Prayer Ministry</a>
+          <a class="nav-dropdown__link" href="t2-content.html">Believer Education</a>
+          <a class="nav-dropdown__link" href="t2-dark.html">HK New Immigrant</a>
+        </div>
+      </div>
+      <div class="nav-item">
+        <a class="nav-link" href="#">
+          About
+          <svg class="chevron" viewBox="0 0 10 6" fill="none" stroke="currentColor" stroke-width="1.5">
+            <path d="M1 1l4 4 4-4" />
+          </svg>
+        </a>
+        <div class="nav-dropdown">
+          <a class="nav-dropdown__link" href="t2-content.html">About Us</a>
+          <a class="nav-dropdown__link" href="t5-team.html">Pastoral Team</a>
+          <a class="nav-dropdown__link" href="t2-content.html">Contact</a>
+          <a class="nav-dropdown__link" href="t2-content.html">Visit Us</a>
+        </div>
+      </div>
+      <div class="nav-item">
+        <a class="nav-link" href="#">
+          Connect
+          <svg class="chevron" viewBox="0 0 10 6" fill="none" stroke="currentColor" stroke-width="1.5">
+            <path d="M1 1l4 4 4-4" />
+          </svg>
+        </a>
+        <div class="nav-dropdown">
+          <a class="nav-dropdown__link" href="t9-news-list.html">News</a>
+          <a class="nav-dropdown__link" href="t6-form.html">Guest Form</a>
+          <a class="nav-dropdown__link" href="t7-member.html">Member Area</a>
+        </div>
+      </div>
+    </div>
+    <div class="global-header__actions">
+      <a class="btn-accent" href="t6-form.html">C.T.A</a>
+      <button class="btn-icon mobile-menu-toggle" aria-label="Open menu">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <path d="M3 12h18M3 6h18M3 18h18" />
+        </svg>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Fullscreen mobile navigation overlay -->
+  <div class="mobile-nav" id="mobileNav">
+    <div class="mobile-nav__header">
+      <img class="mobile-nav__logo" src="logo_light.png" alt="Westside Baptist Church">
+      <button class="mobile-nav__close" aria-label="Close menu">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <path d="M18 6L6 18M6 6l12 12" />
+        </svg>
+      </button>
+    </div>
+    <div class="mobile-nav__body">
+      <a class="mobile-nav__link active" href="t1-homepage.html">Welcome</a>
+      <a class="mobile-nav__link" href="t8-event-list.html">Events</a>
+      <a class="mobile-nav__link" href="t2-content.html">Worship</a>
+      <a class="mobile-nav__link" href="t4-media.html">Sermon</a>
+
+      <!-- Ministries accordion -->
+      <a class="mobile-nav__link" href="#">
+        Ministries
+        <svg class="chevron" viewBox="0 0 10 6" fill="none" stroke="currentColor" stroke-width="1.5">
+          <path d="M1 1l4 4 4-4" />
+        </svg>
+      </a>
+      <div class="mobile-nav__sub">
+        <a href="t3-grid.html">Overview</a>
+        <hr class="nav-dropdown__divider">
+        <a href="t2-content.html">Small Groups</a>
+        <a href="t2-content.html">Youth Ministry</a>
+        <a href="t2-content.html">Children (CitRUs)</a>
+        <a href="t2-content.html">Prayer Ministry</a>
+        <a href="t2-content.html">Believer Education</a>
+        <a href="t2-dark.html">HK New Immigrant</a>
+      </div>
+
+      <!-- About accordion -->
+      <a class="mobile-nav__link" href="#">
+        About
+        <svg class="chevron" viewBox="0 0 10 6" fill="none" stroke="currentColor" stroke-width="1.5">
+          <path d="M1 1l4 4 4-4" />
+        </svg>
+      </a>
+      <div class="mobile-nav__sub">
+        <a href="t2-content.html">About Us</a>
+        <a href="t5-team.html">Pastoral Team</a>
+        <a href="t2-content.html">Contact</a>
+        <a href="t2-content.html">Visit Us</a>
+      </div>
+
+      <!-- Connect accordion -->
+      <a class="mobile-nav__link" href="#">
+        Connect
+        <svg class="chevron" viewBox="0 0 10 6" fill="none" stroke="currentColor" stroke-width="1.5">
+          <path d="M1 1l4 4 4-4" />
+        </svg>
+      </a>
+      <div class="mobile-nav__sub">
+        <a href="t9-news-list.html">News</a>
+        <a href="t6-form.html">Guest Form</a>
+        <a href="t7-member.html">Member Area</a>
+      </div>
+    </div>
+    <div class="mobile-nav__footer">
+      <a class="btn-accent" href="t6-form.html">C.T.A</a>
+    </div>
+  </div>
+
+  <!-- ============================================================
+       ORGANISM: Hero Banner (Homepage variant - 60vh)
+       T1 uses the taller hero with subtitle + CTA
+       ============================================================ -->
+  <header class="hero-banner hero-banner--home"
+    style="background-image: url('https://images.unsplash.com/photo-1438232992991-995b7058bbb3?w=1920&q=80');"
+    id="main-content">
+    <div class="hero-banner__overlay"></div>
+    <div class="hero-banner__content">
+      <h1 class="page-title">T1: Homepage / Aggregator [dynamic/cms]</h1>
+      <p class="body-text">Primary landing page that routes visitors to key content areas. Displays dynamic updates,
+        news cards, and social media integration.</p>
+      <a class="btn-accent" href="t2-content.html">Plan Your Visit</a>
+    </div>
+  </header>
+  <div class="hero-subtitle-mobile">
+    <p class="body-text">Primary landing page that routes visitors to key content areas. Displays dynamic updates, news
+      cards, and social media integration.</p>
+  </div>
+
+  <!-- ============================================================
+       T1-SPECIFIC: Section header + Card Grid
+       Displays latest updates, news, and announcements
+       MOLECULE: card-media (x3 minimum)
+       ============================================================ -->
+  <div class="grid-header">
+    <h2 class="section-title">Read me first</h2>
+    <p class="body-text">The purpose of this template is to demonstrate the design system of the new website, and also
+      consolidate our various use cases across both languages. You will find T1 to T9 templates across the site.</p>
+    <p class="body-text">During review, do not drill into content, function, authentication or presentation structure.
+      <br />However, the font and icon set are not final, and you are welcome to provide feedback.
+    </p>
+    <ul>
+      <li>✅ Is the color suitable? Is the text readable? Is it easy to navigate on both desktop and
+        mobile? Is there some
+        content you want to present but not able to fit into any of the T1–T9 templates? Is there any layout/design/UI
+        component that you would like to include or replace?</li>
+      <li>❌ Why is this sermon outdated? Can we not use this subtitle? Why is this link broken? Why is this event form
+        not working? Why don't I need
+        to log in to the member area? Can we not use this photo as the head banner?</li>
+    </ul>
+  </div>
+  <div class="grid-header">
+    <h2 class="section-title">請先看這裡</h2>
+    <p class="body-text">此模板的目的是展示新網站的設計系統(Design System)，同時整合我們在中英文兩種語言中的各種使用情境。您可以在整個網站中找到 T1 至 T9 的模板。</p>
+    <p class="body-text">審閱時，請不要深究內容、功能、身份驗證或呈現結構。<br>然而, 字型及Icon set 也不是最終定案, 非常歡迎提供意見。
+    <ul>
+      <li>✅ 顏色合適嗎？文字容易閱讀嗎？在桌面版和手機版上都容易導航嗎？有沒有您想呈現但無法放入 T1-T9 任何模板的內容？有沒有您想加入或替換的版面/設計/UI 元件？</li>
+      <li>❌ 為什麼這篇講道過時了？ 我不想要這句subtitle。 為甚麼只有這幾個事工? 為什麼這個連結壞了？為什麼這個活動表單不能用？為什麼我不需要登入會員專區？可以不用這張照片作為頂部橫幅嗎？</li>
+    </ul>
+    </p>
+  </div>
+
+  <div class="grid-header">
+    <h2 class="section-title">Design System Palette<br>顏色系統</h2>
+    <p>Designer of this template is someone with deuteranomaly. We welcome your feedback and contribution.<br>This
+      template
+      inherits the main color scheme of the existing website and adjusts it to be less saturated, also adopting a simple
+      design style.</p>
+    <p>設計這份模板的人有紅綠色盲。歡迎提供意見。<br>此模板承傳現有網站的主色調再加以調整, 令飽和度更低, 也採取簡約的設計風格。</p>
+    <table style="width: 100%; border-collapse: collapse; border-radius: var(--radius-md); overflow: hidden;">
+      <tbody>
+        <tr style="background: #2E5A85; color: #FFFFFF;">
+          <td style="padding: var(--spacing-2) var(--spacing-3);"><strong>Blue</strong></td>
+          <td style="padding: var(--spacing-2) var(--spacing-3); font-family: monospace;">#2E5A85</td>
+          <td style="padding: var(--spacing-2) var(--spacing-3);">Primary brand colour — header, headings, buttons,
+            links</td>
+        </tr>
+        <tr style="background: #FFF6B3; color: #1B3A54;">
+          <td style="padding: var(--spacing-2) var(--spacing-3);"><strong>Cream</strong></td>
+          <td style="padding: var(--spacing-2) var(--spacing-3); font-family: monospace;">#FFF6B3</td>
+          <td style="padding: var(--spacing-2) var(--spacing-3);">Secondary accent — highlights, badges, soft
+            backgrounds</td>
+        </tr>
+        <tr style="background: #F07A60; color: #FFFFFF;">
+          <td style="padding: var(--spacing-2) var(--spacing-3);"><strong>Coral</strong></td>
+          <td style="padding: var(--spacing-2) var(--spacing-3); font-family: monospace;">#F07A60</td>
+          <td style="padding: var(--spacing-2) var(--spacing-3);">CTA / action — accent buttons, progress bars, alerts
+          </td>
+        </tr>
+        <tr style="background: #FFFFFF; color: #1B3A54; border: 1px solid #D3D8DC;">
+          <td style="padding: var(--spacing-2) var(--spacing-3);"><strong>White</strong></td>
+          <td style="padding: var(--spacing-2) var(--spacing-3); font-family: monospace;">#FFFFFF</td>
+          <td style="padding: var(--spacing-2) var(--spacing-3);">Surfaces — cards, modals, text on dark backgrounds
+          </td>
+        </tr>
+        <tr style="background: #F7F8FA; color: #1B3A54; border: 1px solid #D3D8DC;">
+          <td style="padding: var(--spacing-2) var(--spacing-3);"><strong>Off-white</strong></td>
+          <td style="padding: var(--spacing-2) var(--spacing-3); font-family: monospace;">#F7F8FA</td>
+          <td style="padding: var(--spacing-2) var(--spacing-3);">Page background — the base canvas behind all content
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="grid-header">
+    <h2 class="section-title">Templates 模板</h2>
+  </div>
+  <div class="grid-container">
+
+    <!-- T1 -->
+    <a class="card-media" href="t1-homepage.html">
+      <div class="card-media__content">
+        <span class="meta-text">T1</span>
+        <h3 class="card-title">Homepage / Aggregator</h3>
+        <p class="body-text-sm">Primary landing page that routes visitors to key content areas. Displays dynamic
+          updates, news cards, and social media integration.</p>
+      </div>
+    </a>
+
+    <!-- T2 -->
+    <a class="card-media" href="t2-content.html">
+      <div class="card-media__content">
+        <span class="meta-text">T2</span>
+        <h3 class="card-title">Simple Content Layout</h3>
+        <p class="body-text-sm">General-purpose informational page for narrative content, program descriptions, event
+          details, and announcements.</p>
+      </div>
+    </a>
+
+    <!-- T2-ZH -->
+    <a class="card-media" href="t2-content-zh.html">
+      <div class="card-media__content">
+        <span class="meta-text">T2-ZH</span>
+        <h3 class="card-title">簡約內容版面（繁體中文）</h3>
+        <p class="body-text-sm">通用資訊頁面，適用於敘述性內容、事工介紹、活動詳情及公告。</p>
+      </div>
+    </a>
+
+    <!-- T2-Dark -->
+    <a class="card-media" href="t2-dark.html">
+      <div class="card-media__content">
+        <span class="meta-text">T2-Dark</span>
+        <h3 class="card-title">Simple Content Layout (Dark Theme)</h3>
+        <p class="body-text-sm">Dark theme variant of T2. Same structure — text blocks, split content, lists — rendered
+          on a dark surface for evening reading or dramatic visual tone.</p>
+      </div>
+    </a>
+
+    <!-- T3 -->
+    <a class="card-media" href="t3-grid.html">
+      <div class="card-media__content">
+        <span class="meta-text">T3</span>
+        <h3 class="card-title">Grid / Collection Layout</h3>
+        <p class="body-text-sm">Displays categorized listings, directories, and archives as a responsive card grid.
+          Ideal for ministries, news, and blog indexes.</p>
+      </div>
+    </a>
+
+    <!-- T4 -->
+    <a class="card-media" href="t4-media.html">
+      <div class="card-media__content">
+        <span class="meta-text">T4</span>
+        <h3 class="card-title">Media (Audio) Archive</h3>
+        <p class="body-text-sm">Specialized listing and playback for audio and video content. Each card includes an
+          embedded player with notes and download actions.</p>
+      </div>
+    </a>
+
+    <!-- T5 -->
+    <a class="card-media" href="t5-team.html">
+      <div class="card-media__content">
+        <span class="meta-text">T5</span>
+        <h3 class="card-title">Team Profiles</h3>
+        <p class="body-text-sm">Showcases people with circular headshots, names, roles, and bios. Used for pastoral
+          staff, ministry teams, and leadership directories.</p>
+      </div>
+    </a>
+
+    <!-- T6 -->
+    <a class="card-media" href="t6-form.html">
+      <div class="card-media__content">
+        <span class="meta-text">T6</span>
+        <h3 class="card-title">Form / Transaction</h3>
+        <p class="body-text-sm">Conversion-focused page for data capture, registration, authentication, and financial
+          transactions. No hero banner — intentionally minimal.</p>
+      </div>
+    </a>
+
+    <!-- T7 -->
+    <a class="card-media" href="t7-member.html">
+      <div class="card-media__content">
+        <span class="meta-text">T7</span>
+        <h3 class="card-title">Member Area</h3>
+        <p class="body-text-sm">Authenticated member dashboard with governance info, documents, and quick links.
+          Requires login to access.</p>
+      </div>
+    </a>
+
+    <!-- T8 -->
+    <a class="card-media" href="t8-event-list.html">
+      <div class="card-media__content">
+        <span class="meta-text">T8</span>
+        <h3 class="card-title">Event List</h3>
+        <p class="body-text-sm">Instagram-style event card grid. Shows title, date range, time, location, and fee at a
+          glance. Links to event detail pages.</p>
+      </div>
+    </a>
+
+    <!-- T9 -->
+    <a class="card-media" href="t9-news-list.html">
+      <div class="card-media__content">
+        <span class="meta-text">T9</span>
+        <h3 class="card-title">News List</h3>
+        <p class="body-text-sm">Weekly worship bulletins and church announcements. Stay informed about what's happening
+          at Westside Baptist Church.</p>
+      </div>
+    </a>
+
+  </div>
+
+  <!-- ============================================================
+       T1-SPECIFIC: Social Media Embed
+       Integrates live social feed for community engagement
+       MOLECULE: social-embed
+       ============================================================ -->
+  <div class="social-embed">
+    <!-- Replace with actual Facebook Page Plugin or Instagram embed -->
+    <div class="social-embed-placeholder">
+      <h3 class="card-title">Follow Us on Social Media</h3>
+      <p class="body-text-sm">Facebook &amp; Instagram feed embed goes here.<br>Connect with Westside Baptist Church
+        online.</p>
+      <a class="btn-outline" href="#">Visit Our Facebook Page</a>
+    </div>
+  </div>
+
+  <!-- ============================================================
+       ORGANISM: Site Footer
+       Used on: Every page
+       ============================================================ -->
+  <footer class="site-footer">
+    <div class="site-footer__inner">
+      <div class="site-footer__brand">
+        <img class="site-footer__logo" src="logo_light.png" alt="Westside Baptist Church logo">
+        <h4>Westside Baptist Church</h4>
+        <p class="body-text-sm">8506 Ash Street, Vancouver, BC V6P 3M2</p>
+        <div class="site-footer__util">
+          <a href="https://maps.google.com/?q=8506+Ash+Street+Vancouver+BC" target="_blank"><svg viewBox="0 0 16 16"
+              fill="none" stroke="currentColor" stroke-width="1.5">
+              <path d="M8 2a4 4 0 014 4c0 3-4 7-4 7s-4-4-4-7a4 4 0 014-4z" />
+              <circle cx="8" cy="6" r="1.5" />
+            </svg> Get Directions</a>
+          <a href="#"><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5">
+              <rect x="2" y="5" width="12" height="8" rx="1" />
+              <path d="M5 5V4a3 3 0 016 0v1" />
+            </svg> Parking Info</a>
+        </div>
+        <p class="body-text-sm">A young, vibrant, dynamic and friendly church serving the multicultural population in
+          Vancouver.</p>
+      </div>
+      <div class="site-footer__links">
+        <h4>Quick Links</h4>
+        <a href="t4-media.html">Sermons</a>
+        <a href="t8-event-list.html">Events</a>
+        <a href="t7-member.html">Member Area</a>
+        <a href="t2-content.html">About Us</a>
+        <a href="t6-form.html">Give</a>
+      </div>
+      <div class="site-footer__contact">
+        <h4>Contact Us</h4>
+        <p class="body-text-sm">info@westsidebaptist.ca</p>
+        <p class="body-text-sm">604-266-5602</p>
+        <p class="body-text-sm site-footer__office-hours">Office Hours:<br>Tue-Fri 10am-6pm<br>Sat 10am-4pm</p>
+        <div class="site-footer__social">
+          <a href="https://facebook.com/westsidebaptist.ca" target="_blank" aria-label="Facebook"><svg
+              viewBox="0 0 24 24" fill="currentColor">
+              <path
+                d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z" />
+            </svg></a>
+          <a href="https://instagram.com/westsidebaptist" target="_blank" aria-label="Instagram"><svg
+              viewBox="0 0 24 24" fill="currentColor">
+              <path
+                d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z" />
+            </svg></a>
+        </div>
+      </div>
+    </div>
+    <div class="site-footer__bottom">
+      <p class="caption">&copy; 2026 Westside Baptist Church. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script defer src="ui-components.js"></script>
+</body>
+
+</html>

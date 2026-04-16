@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>T8: Event Detail (No Registration)</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Outfit:wght@400;500;600;700&display=swap">
+  <link rel="stylesheet" href="design-system.css">
+</head>
+<body>
+
+  <a class="skip-link" href="#main-content">Skip to content</a>
+
+  <!-- ORGANISM: Global Navigation Header -->
+  <nav class="global-header">
+    <a class="global-header__logo" href="t1-homepage.html">
+      <span class="global-header__logo-text">Westside Baptist Church</span>
+    </a>
+    <div class="nav-link-group">
+      <div class="nav-item">
+        <a class="nav-link" href="t1-homepage.html">Welcome</a>
+      </div>
+      <div class="nav-item">
+        <a class="nav-link active" href="t8-event-list.html">Events</a>
+      </div>
+      <div class="nav-item">
+        <a class="nav-link" href="t2-content.html">Worship</a>
+      </div>
+      <div class="nav-item">
+        <a class="nav-link" href="t4-media.html">Sermon</a>
+      </div>
+      <div class="nav-item">
+        <a class="nav-link" href="#">
+          Ministries
+          <svg class="chevron" viewBox="0 0 10 6" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M1 1l4 4 4-4"/></svg>
+        </a>
+        <div class="nav-dropdown">
+          <a class="nav-dropdown__link" href="t3-grid.html">Overview</a>
+          <div class="nav-dropdown__divider"></div>
+          <a class="nav-dropdown__link" href="t2-content.html">Small Groups</a>
+          <a class="nav-dropdown__link" href="t2-content.html">Youth Ministry</a>
+          <a class="nav-dropdown__link" href="t2-content.html">Children (CitRUs)</a>
+          <a class="nav-dropdown__link" href="t2-content.html">Prayer Ministry</a>
+          <a class="nav-dropdown__link" href="t2-content.html">Believer Education</a>
+          <a class="nav-dropdown__link" href="t2-dark.html">T2-Dark Theme</a>
+        </div>
+      </div>
+      <div class="nav-item">
+        <a class="nav-link" href="#">
+          About
+          <svg class="chevron" viewBox="0 0 10 6" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M1 1l4 4 4-4"/></svg>
+        </a>
+        <div class="nav-dropdown">
+          <a class="nav-dropdown__link" href="t2-content.html">About Us</a>
+          <a class="nav-dropdown__link" href="t5-team.html">Pastoral Team</a>
+          <a class="nav-dropdown__link" href="t2-content.html">Contact</a>
+          <a class="nav-dropdown__link" href="t2-content.html">Visit Us</a>
+        </div>
+      </div>
+      <div class="nav-item">
+        <a class="nav-link" href="#">
+          Connect
+          <svg class="chevron" viewBox="0 0 10 6" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M1 1l4 4 4-4"/></svg>
+        </a>
+        <div class="nav-dropdown">
+          <a class="nav-dropdown__link" href="t9-news-list.html">News</a>
+          <a class="nav-dropdown__link" href="t6-form.html">Guest Form</a>
+          <a class="nav-dropdown__link" href="t7-member.html">Member Area</a>
+        </div>
+      </div>
+    </div>
+    <div class="global-header__actions">
+      <a class="btn-accent" href="t6-form.html">C.T.A</a>
+      <button class="btn-icon mobile-menu-toggle" aria-label="Open menu">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 12h18M3 6h18M3 18h18"/></svg>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Mobile nav -->
+  <div class="mobile-nav" id="mobileNav">
+    <div class="mobile-nav__header">
+      <img class="mobile-nav__logo" src="logo_light.png" alt="Westside Baptist Church">
+      <button class="mobile-nav__close" aria-label="Close menu">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 6L6 18M6 6l12 12"/></svg>
+      </button>
+    </div>
+    <div class="mobile-nav__body">
+      <a class="mobile-nav__link" href="t1-homepage.html">Welcome</a>
+      <a class="mobile-nav__link active" href="t8-event-list.html">Events</a>
+      <a class="mobile-nav__link" href="t2-content.html">Worship</a>
+      <a class="mobile-nav__link" href="t4-media.html">Sermon</a>
+
+      <!-- Ministries accordion -->
+      <a class="mobile-nav__link" href="#">
+        Ministries
+        <svg class="chevron" viewBox="0 0 10 6" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M1 1l4 4 4-4"/></svg>
+      </a>
+      <div class="mobile-nav__sub">
+        <a href="t3-grid.html">Overview</a>
+        <hr class="nav-dropdown__divider">
+        <a href="t2-content.html">Small Groups</a>
+        <a href="t2-content.html">Youth Ministry</a>
+        <a href="t2-content.html">Children (CitRUs)</a>
+        <a href="t2-content.html">Prayer Ministry</a>
+        <a href="t2-content.html">Believer Education</a>
+        <a href="t2-dark.html">T2-Dark Theme</a>
+      </div>
+
+      <!-- About accordion -->
+      <a class="mobile-nav__link" href="#">
+        About
+        <svg class="chevron" viewBox="0 0 10 6" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M1 1l4 4 4-4"/></svg>
+      </a>
+      <div class="mobile-nav__sub">
+        <a href="t2-content.html">About Us</a>
+        <a href="t5-team.html">Pastoral Team</a>
+        <a href="t2-content.html">Contact</a>
+        <a href="t2-content.html">Visit Us</a>
+      </div>
+
+      <!-- Connect accordion -->
+      <a class="mobile-nav__link" href="#">
+        Connect
+        <svg class="chevron" viewBox="0 0 10 6" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M1 1l4 4 4-4"/></svg>
+      </a>
+      <div class="mobile-nav__sub">
+        <a href="t9-news-list.html">News</a>
+        <a href="t6-form.html">Guest Form</a>
+        <a href="t7-member.html">Member Area</a>
+      </div>
+    </div>
+    <div class="mobile-nav__footer">
+      <a class="btn-accent" href="t6-form.html">C.T.A</a>
+    </div>
+  </div>
+
+  <!-- T8: Event Sub-Navigation (no Register link) -->
+  <div class="event-subnav" id="main-content">
+    <a class="event-subnav__link" href="t8-event-list.html">&larr; All Events</a>
+    <a class="event-subnav__link active" href="t8-event-detail-open.html">Event Detail</a>
+  </div>
+
+  <!-- ============================================================
+       T8-DETAIL (OPEN): No registration required
+       ============================================================ -->
+  <div class="event-detail">
+
+    <!-- Hero card with key info -->
+    <div class="event-hero">
+      <img class="event-hero__image" src="https://images.unsplash.com/photo-1511632765486-a01980e01a18?w=1200&q=80" alt="Summer Community BBQ gathering" loading="lazy" decoding="async">
+      <div class="event-hero__body">
+        <span class="badge event-hero__badge">Community</span>
+        <h1 class="event-hero__title">Summer Community BBQ</h1>
+
+        <div class="event-hero__key-info">
+          <div class="event-hero__info-item">
+            <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="3" width="12" height="11" rx="1"/><path d="M2 7h12M5 1v4M11 1v4"/></svg>
+            <p class="body-text-sm"><strong>Date</strong><br>Saturday, June 21, 2026</p>
+          </div>
+          <div class="event-hero__info-item">
+            <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="8" cy="8" r="6"/><path d="M8 5v3l2 2"/></svg>
+            <p class="body-text-sm"><strong>Time</strong><br>12:00 PM – 3:00 PM</p>
+          </div>
+          <div class="event-hero__info-item">
+            <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M8 2a4 4 0 014 4c0 3-4 7-4 7s-4-4-4-7a4 4 0 014-4z"/><circle cx="8" cy="6" r="1.5"/></svg>
+            <p class="body-text-sm"><strong>Location</strong><br>Church Backyard, 8506 Ash St</p>
+          </div>
+          <div class="event-hero__info-item">
+            <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M8 1v2M8 13v2M1 8h2M13 8h2"/><circle cx="8" cy="8" r="4"/></svg>
+            <p class="body-text-sm"><strong>Fee</strong><br>Free</p>
+          </div>
+        </div>
+
+        <!-- No registration — open invitation message -->
+        <div class="event-hero__actions">
+          <p class="body-text text-success-bold mb-0">No registration required — just come and join us!</p>
+          <button class="btn-outline" data-share-title="Summer Community BBQ">Share Event</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- FB wall post: News / Update -->
+    <div class="event-post">
+      <div class="event-post__header">
+        <div class="event-post__icon">
+          <svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M4 4h12v12H4z" rx="1"/><path d="M4 8h12"/><path d="M8 4v12"/></svg>
+        </div>
+        <div class="event-post__header-text">
+          <span class="event-post__label">News / Update</span>
+          <span class="event-post__timestamp">Posted 1 week ago</span>
+        </div>
+      </div>
+      <div class="event-post__body">
+        <p class="body-text"><strong>Volunteers needed!</strong> We're looking for helpers to set up tables, grill food, and manage games. If you'd like to serve, please contact the church office by June 14.</p>
+        <p class="body-text">This year we're expecting over 150 attendees including families from the Marpole neighbourhood. Invite your friends and neighbours!</p>
+      </div>
+    </div>
+
+    <!-- FB wall post: Description -->
+    <div class="event-post">
+      <div class="event-post__header">
+        <div class="event-post__icon">
+          <svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3 5h14M3 10h10M3 15h7"/></svg>
+        </div>
+        <div class="event-post__header-text">
+          <span class="event-post__label">Description</span>
+        </div>
+      </div>
+      <div class="event-post__body">
+        <p class="body-text">Join us for our annual Summer Community BBQ! This is a free, family-friendly event open to everyone — church members, neighbours, friends, and visitors. No registration or RSVP needed.</p>
+        <p class="body-text">Enjoy grilled burgers, hot dogs, salads, drinks, and desserts. Activities include face painting, lawn games, a bouncy castle for kids, and live music from our praise team. It's a wonderful opportunity to meet new people, reconnect with friends, and enjoy the summer sunshine together.</p>
+        <p class="body-text">Feel free to bring a side dish or dessert to share, but it's absolutely not required. Just bring yourself and a smile!</p>
+      </div>
+    </div>
+
+    <!-- FB wall post: Date and Time -->
+    <div class="event-post">
+      <div class="event-post__header">
+        <div class="event-post__icon">
+          <svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="4" width="14" height="13" rx="1"/><path d="M3 9h14M7 2v4M13 2v4"/></svg>
+        </div>
+        <div class="event-post__header-text">
+          <span class="event-post__label">Date and Time</span>
+        </div>
+      </div>
+      <div class="event-post__body">
+        <p class="body-text"><strong>Saturday, June 21, 2026</strong></p>
+        <p class="body-text">12:00 PM – 3:00 PM (drop in anytime, no need to stay the whole time)</p>
+        <p class="body-text">In case of rain, the event moves indoors to the church fellowship hall.</p>
+      </div>
+    </div>
+
+    <!-- FB wall post: Location -->
+    <div class="event-post">
+      <div class="event-post__header">
+        <div class="event-post__icon">
+          <svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M10 3a5 5 0 015 5c0 3.5-5 9-5 9s-5-5.5-5-9a5 5 0 015-5z"/><circle cx="10" cy="8" r="2"/></svg>
+        </div>
+        <div class="event-post__header-text">
+          <span class="event-post__label">Location</span>
+        </div>
+      </div>
+      <div class="event-post__body">
+        <p class="body-text"><strong>Westside Baptist Church — Backyard</strong><br>8506 Ash Street, Vancouver, BC V6P 3M2</p>
+        <p class="body-text">Street parking is available on Ash Street and surrounding blocks. Please see our parking map for details.</p>
+        <iframe class="event-post__map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2607.5!2d-123.116!3d49.21!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNDnCsDEyJzM2LjAiTiAxMjPCsDA2JzU3LjYiVw!5e0!3m2!1sen!2sca!4v1" allowfullscreen loading="lazy" title="Westside Baptist Church map"></iframe>
+      </div>
+    </div>
+
+    <!-- FB wall post: About the Host -->
+    <div class="event-post">
+      <div class="event-post__header">
+        <div class="event-post__icon">
+          <svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="10" cy="7" r="3"/><path d="M4 17c0-3.3 2.7-6 6-6s6 2.7 6 6"/></svg>
+        </div>
+        <div class="event-post__header-text">
+          <span class="event-post__label">About the Host</span>
+        </div>
+      </div>
+      <div class="event-post__body">
+        <div class="event-host">
+          <img class="img-profile" src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=200&q=80" alt="Rev. Dr. Gladys Lee Tsang" loading="lazy" decoding="async">
+          <div>
+            <h3 class="profile-name">Rev. Dr. Gladys Lee Tsang</h3>
+            <span class="meta-text">Senior Pastor &middot; Founding Pastor</span>
+            <p class="body-text-sm mb-0">Pastor Gladys has led Westside Baptist since its founding in 1990. The annual BBQ is one of her favourite events — a celebration of community and neighbourly love.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <footer class="site-footer">
+    <div class="site-footer__inner">
+      <div class="site-footer__brand">
+        <img class="site-footer__logo" src="logo_light.png" alt="Westside Baptist Church logo">
+        <h4>Westside Baptist Church</h4>
+        <p class="body-text-sm">8506 Ash Street, Vancouver, BC V6P 3M2</p>
+        <div class="site-footer__util">
+          <a href="https://maps.google.com/?q=8506+Ash+Street+Vancouver+BC" target="_blank"><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M8 2a4 4 0 014 4c0 3-4 7-4 7s-4-4-4-7a4 4 0 014-4z"/><circle cx="8" cy="6" r="1.5"/></svg> Get Directions</a>
+          <a href="#"><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="5" width="12" height="8" rx="1"/><path d="M5 5V4a3 3 0 016 0v1"/></svg> Parking Info</a>
+        </div>
+        <p class="body-text-sm">A young, vibrant, dynamic and friendly church serving the multicultural population in Vancouver.</p>
+      </div>
+      <div class="site-footer__links">
+        <h4>Quick Links</h4>
+        <a href="t4-media.html">Sermons</a>
+        <a href="t8-event-list.html">Events</a>
+        <a href="t7-member.html">Member Area</a>
+        <a href="t2-content.html">About Us</a>
+        <a href="t6-form.html">Give</a>
+      </div>
+      <div class="site-footer__contact">
+        <h4>Contact Us</h4>
+        <p class="body-text-sm">info@westsidebaptist.ca</p>
+        <p class="body-text-sm">604-266-5602</p>
+        <p class="body-text-sm site-footer__office-hours">Office Hours:<br>Tue-Fri 10am-6pm<br>Sat 10am-4pm</p>
+        <div class="site-footer__social">
+          <a href="https://facebook.com/westsidebaptist.ca" target="_blank" aria-label="Facebook"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg></a>
+          <a href="https://instagram.com/westsidebaptist" target="_blank" aria-label="Instagram"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/></svg></a>
+        </div>
+      </div>
+    </div>
+    <div class="site-footer__bottom">
+      <p class="caption">&copy; 2026 Westside Baptist Church. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script defer src="ui-components.js"></script>
+</body>
+</html>

@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>T9: News Detail</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Outfit:wght@400;500;600;700&display=swap">
+  <link rel="stylesheet" href="design-system.css">
+</head>
+
+<body>
+
+  <a class="skip-link" href="#main-content">Skip to content</a>
+
+  <!-- ORGANISM: Global Navigation Header -->
+  <nav class="global-header">
+    <a class="global-header__logo" href="t1-homepage.html">
+      <span class="global-header__logo-text">Westside Baptist Church</span>
+    </a>
+    <div class="nav-link-group">
+      <div class="nav-item">
+        <a class="nav-link" href="t1-homepage.html">Welcome</a>
+      </div>
+      <div class="nav-item">
+        <a class="nav-link" href="t8-event-list.html">Events</a>
+      </div>
+      <div class="nav-item">
+        <a class="nav-link" href="t2-content.html">Worship</a>
+      </div>
+      <div class="nav-item">
+        <a class="nav-link" href="t4-media.html">Sermon</a>
+      </div>
+      <div class="nav-item">
+        <a class="nav-link" href="#">
+          Ministries
+          <svg class="chevron" viewBox="0 0 10 6" fill="none" stroke="currentColor" stroke-width="1.5">
+            <path d="M1 1l4 4 4-4" />
+          </svg>
+        </a>
+        <div class="nav-dropdown">
+          <a class="nav-dropdown__link" href="t3-grid.html">Overview</a>
+          <div class="nav-dropdown__divider"></div>
+          <a class="nav-dropdown__link" href="t2-content.html">Small Groups</a>
+          <a class="nav-dropdown__link" href="t2-content.html">Youth Ministry</a>
+          <a class="nav-dropdown__link" href="t2-content.html">Children (CitRUs)</a>
+          <a class="nav-dropdown__link" href="t2-content.html">Prayer Ministry</a>
+          <a class="nav-dropdown__link" href="t2-content.html">Believer Education</a>
+          <a class="nav-dropdown__link" href="t2-dark.html">HK New Immigrant</a>
+        </div>
+      </div>
+      <div class="nav-item">
+        <a class="nav-link" href="#">
+          About
+          <svg class="chevron" viewBox="0 0 10 6" fill="none" stroke="currentColor" stroke-width="1.5">
+            <path d="M1 1l4 4 4-4" />
+          </svg>
+        </a>
+        <div class="nav-dropdown">
+          <a class="nav-dropdown__link" href="t2-content.html">About Us</a>
+          <a class="nav-dropdown__link" href="t5-team.html">Pastoral Team</a>
+          <a class="nav-dropdown__link" href="t2-content.html">Contact</a>
+          <a class="nav-dropdown__link" href="t2-content.html">Visit Us</a>
+        </div>
+      </div>
+      <div class="nav-item">
+        <a class="nav-link" href="#">
+          Connect
+          <svg class="chevron" viewBox="0 0 10 6" fill="none" stroke="currentColor" stroke-width="1.5">
+            <path d="M1 1l4 4 4-4" />
+          </svg>
+        </a>
+        <div class="nav-dropdown">
+          <a class="nav-dropdown__link active" href="t9-news-list.html">News</a>
+          <a class="nav-dropdown__link" href="t6-form.html">Guest Form</a>
+          <a class="nav-dropdown__link" href="t7-member.html">Member Area</a>
+        </div>
+      </div>
+    </div>
+    <div class="global-header__actions">
+      <a class="btn-accent" href="t6-form.html">C.T.A</a>
+      <button class="btn-icon mobile-menu-toggle" aria-label="Open menu">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <path d="M3 12h18M3 6h18M3 18h18" />
+        </svg>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Fullscreen mobile navigation overlay -->
+  <div class="mobile-nav" id="mobileNav">
+    <div class="mobile-nav__header">
+      <img class="mobile-nav__logo" src="logo_light.png" alt="Westside Baptist Church">
+      <button class="mobile-nav__close" aria-label="Close menu">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <path d="M18 6L6 18M6 6l12 12" />
+        </svg>
+      </button>
+    </div>
+    <div class="mobile-nav__body">
+      <a class="mobile-nav__link" href="t1-homepage.html">Welcome</a>
+      <a class="mobile-nav__link" href="t8-event-list.html">Events</a>
+      <a class="mobile-nav__link" href="t2-content.html">Worship</a>
+      <a class="mobile-nav__link" href="t4-media.html">Sermon</a>
+
+      <!-- Ministries accordion -->
+      <a class="mobile-nav__link" href="#">
+        Ministries
+        <svg class="chevron" viewBox="0 0 10 6" fill="none" stroke="currentColor" stroke-width="1.5">
+          <path d="M1 1l4 4 4-4" />
+        </svg>
+      </a>
+      <div class="mobile-nav__sub">
+        <a href="t3-grid.html">Overview</a>
+        <hr class="nav-dropdown__divider">
+        <a href="t2-content.html">Small Groups</a>
+        <a href="t2-content.html">Youth Ministry</a>
+        <a href="t2-content.html">Children (CitRUs)</a>
+        <a href="t2-content.html">Prayer Ministry</a>
+        <a href="t2-content.html">Believer Education</a>
+        <a href="t2-dark.html">HK New Immigrant</a>
+      </div>
+
+      <!-- About accordion -->
+      <a class="mobile-nav__link" href="#">
+        About
+        <svg class="chevron" viewBox="0 0 10 6" fill="none" stroke="currentColor" stroke-width="1.5">
+          <path d="M1 1l4 4 4-4" />
+        </svg>
+      </a>
+      <div class="mobile-nav__sub">
+        <a href="t2-content.html">About Us</a>
+        <a href="t5-team.html">Pastoral Team</a>
+        <a href="t2-content.html">Contact</a>
+        <a href="t2-content.html">Visit Us</a>
+      </div>
+
+      <!-- Connect accordion -->
+      <a class="mobile-nav__link" href="#">
+        Connect
+        <svg class="chevron" viewBox="0 0 10 6" fill="none" stroke="currentColor" stroke-width="1.5">
+          <path d="M1 1l4 4 4-4" />
+        </svg>
+      </a>
+      <div class="mobile-nav__sub">
+        <a class="active" href="t9-news-list.html">News</a>
+        <a href="t6-form.html">Guest Form</a>
+        <a href="t7-member.html">Member Area</a>
+      </div>
+    </div>
+    <div class="mobile-nav__footer">
+      <a class="btn-accent" href="t6-form.html">C.T.A</a>
+    </div>
+  </div>
+
+  <!-- ============================================================
+       ORGANISM: Hero Banner (Internal - 40vh)
+       ============================================================ -->
+  <header class="hero-banner"
+    style="background-image: url('https://images.unsplash.com/photo-1504711434969-e33886168d5c?w=1920&q=80');"
+    id="main-content">
+    <div class="hero-banner__overlay"></div>
+    <div class="hero-banner__content">
+      <h1 class="page-title">T9: News Detail [CMS]</h1>
+      <p class="body-text">Individual bulletin article with structured sections for church life, scripture, and
+        announcements.</p>
+    </div>
+  </header>
+  <div class="hero-subtitle-mobile">
+    <p class="body-text">Individual bulletin article with structured sections for church life, scripture, and
+      announcements.</p>
+  </div>
+
+  <!-- ============================================================
+       T9-DETAIL: Article-style news detail
+       Content mirrors the CMS-driven weekly worship bulletin:
+       - Church life items (prayer meetings, classes, small groups)
+       - Memory verse
+       - Announcements (events, camps, fundraising, VBS)
+       - Previous / Next navigation
+       ============================================================ -->
+  <div class="news-detail">
+
+    <!-- Back link -->
+    <a class="news-detail__back" href="t9-news-list.html">
+      <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2">
+        <path d="M10 3L5 8l5 5" />
+      </svg>
+      Back to News
+    </a>
+
+    <!-- Article header -->
+    <div class="news-detail__header">
+      <h2 class="news-detail__title">2026&#24180;4&#26376;11&#12289;12&#26085; &#23815;&#25308;</h2>
+      <div class="news-detail__meta">
+        <span class="news-detail__meta-item">
+          <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5">
+            <rect x="2" y="3" width="12" height="11" rx="1" />
+            <path d="M2 7h12M5 1v4M11 1v4" />
+          </svg>
+          April 11, 2026
+        </span>
+        <span class="news-detail__meta-divider"></span>
+        <span class="news-detail__meta-item">
+          <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5">
+            <circle cx="8" cy="8" r="6" />
+            <path d="M8 4v4h3" />
+          </svg>
+          Church Office
+        </span>
+      </div>
+    </div>
+
+    <!-- Section: Church Life -->
+    <div class="news-section">
+      <h3 class="news-section__heading">&#32930;&#39636;&#29983;&#27963;</h3>
+      <div class="news-section__content">
+        <ul>
+          <li>
+            <strong>&#31048;&#31153;&#26371;</strong><br>
+            &#36898;&#26143;&#26399;&#19977;&#26202;&#19978;7:00-8:00&#20197;&#35222;&#20687;&#24418;&#24335;&#36914;&#34892;&#65292;&#27489;&#36814;&#25152;&#26377;&#24351;&#20804;&#22985;&#22969;&#21443;&#21152;&#12290;
+            <ul>
+              <li>&#19978;&#32178;&#21443;&#21152;&#65288;&#20351;&#29992;Zoom&#36575;&#20214;&#65289;</li>
+              <li>Meeting ID: 820 3761 9832</li>
+              <li>Password: 266560</li>
+            </ul>
+          </li>
+          <li>
+            <strong>&#12300;&#35199;&#28024;101&#12301;</strong>
+            &#26159;&#28858;&#25152;&#26377;&#24076;&#26395;&#36890;&#36942;&#28024;&#31150;&#25110;&#36681;&#26371;&#21152;&#20837;&#35199;&#21312;&#28024;&#20449;&#26371;&#25104;&#28858;&#26371;&#21451;&#30340;&#20154;&#32780;&#35373;&#30340;&#35506;&#31243;&#12290;&#23427;&#21253;&#25324;&#22823;&#32004;&#20116;&#20491;
+            1 &#20491;&#21322;&#23567;&#26178;&#30340;&#35506;&#22530;&#12290;
+          </li>
+          <li>
+            <strong>&#35199;&#21312;&#28024;&#20449;&#26371;&#26159;&#19968;&#38291;&#12300;&#23567;&#32068;&#25945;&#26371;&#12301;</strong>&#12290;&#23567;&#32068;&#26159;&#25105;&#20497;&#22296;&#22865;&#29983;&#27963;&#30340;&#20013;&#24515;&#65292;&#20063;&#26159;&#25105;&#20497;&#25972;&#20840;&#22522;&#30563;&#24466;&#29983;&#27963;&#19981;&#21487;&#25110;&#32570;&#30340;&#37096;&#20221;&#12290;
+            &#21443;&#21152;&#23567;&#32068;&#30340;&#35201;&#27714;&#21253;&#25324;&#24050;&#32147;&#31337;&#23450;&#22320;&#27599;&#36913;&#20986;&#24109;&#35199;&#21312;&#28024;&#20449;&#26371;&#30340;&#23526;&#39636;&#20027;&#26085;&#23815;&#25308;&#19968;&#27573;&#26085;&#23376;&#65288;&#26368;&#23569;6&#26143;&#26399;&#65289;&#65292;&#21644;&#39000;&#24847;&#21450;&#33021;&#22816;&#22996;&#36523;&#21443;&#33287;&#23567;&#32068;&#65292;&#32173;&#25345;75%&#20197;&#19978;&#30340;&#20986;&#24109;&#29575;&#12290;
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Section: Memory Verse -->
+    <div class="news-section">
+      <h3 class="news-section__heading">&#32972;&#35494;&#37329;&#21477;</h3>
+      <div class="news-verse">
+        <p class="news-verse__text">
+          &#24799;&#26377;&#22522;&#30563;&#22312;&#25105;&#20497;&#36996;&#20316;&#32618;&#20154;&#30340;&#26178;&#20505;&#28858;&#25105;&#20497;&#27515;&#65292;&#19978;&#24093;&#30340;&#24859;&#23601;&#22312;&#27492;&#21521;&#25105;&#20497;&#39023;&#26126;&#20102;&#12290;
+        </p>
+        <span class="news-verse__ref">&#32645;&#39340;&#26360; 5:8 |
+          &#21644;&#21512;&#26412;&#20462;&#35330;&#29256;</span>
+      </div>
+    </div>
+
+    <!-- Section: Announcements -->
+    <div class="news-section">
+      <h3 class="news-section__heading">&#22577;&#21578;&#20107;&#38917;</h3>
+      <div class="news-section__content">
+        <ul>
+          <li>
+            <a
+              href="#">4&#26376;&#20221;&#26376;&#22577;</a>&#24050;&#21002;&#30331;&#26044;&#25945;&#26371;&#32178;&#38913;&#21450;&#22721;&#20296;&#29256;&#12290;
+          </li>
+          <li>
+            <strong>&#25945;&#26371;34&#36913;&#24180;&#24950;&#31069;&#27963;&#21205;</strong>&#65292;&#27489;&#36814;&#26371;&#30526;&#20986;&#24109;&#65306;
+            <ul>
+              <li>
+                &#30495;&#20154;&#22294;&#26360;&#39208;&#35222;&#20687;&#20998;&#20139;&#26371;&#65292;4&#26376;26&#26085;-30&#26085;&#26202;&#19978;7:30&#33289;&#34892;&#12290;
+              </li>
+              <li>
+                &#22530;&#24950;&#29305;&#21029;&#32858;&#26371;&#65292;5&#26376;1&#26085;&#26202;&#19978;7:30&#22312;&#25945;&#26371;&#22823;&#22530;&#33289;&#34892;&#12290;&#23622;&#26178;&#26371;&#26377;&#38924;&#35738;&#12289;&#20998;&#20139;&#12289;&#36938;&#25138;&#21450;&#33590;&#40670;potluck&#12290;
+              </li>
+              <li>
+                &#22823;&#21512;&#29031;&#20998;&#21029;&#22312;5&#26376;2&#12289;3&#26085;(&#26143;&#26399;&#20845;&#12289;&#26085;&#65289;&#21508;&#23815;&#25308;&#24460;&#36914;&#34892;&#12290;
+              </li>
+            </ul>
+          </li>
+          <li>
+            <strong>2026&#24180;&#38738;&#24180;&#29151; - Firm Foundation</strong>
+            <ul>
+              <li>&#26085;&#26399;&#65306;2026&#24180;5&#26376;15&#26085;&#33267;18&#26085;</li>
+              <li>&#22320;&#40670;&#65306;&#35199;&#19977;&#19968;&#22823;&#23416;</li>
+              <li>&#29151;&#36027;&#65306;&#27599;&#20301;&#65284;299</li>
+              <li>&#36969;&#21512;&#65306;GZone&#30340;&#38738;&#23569;&#24180;&#21443;&#21152;</li>
+              <li>&#25130;&#27490;&#22577;&#21517;&#65306;5&#26376;1&#26085;</li>
+            </ul>
+          </li>
+          <li>
+            <strong>&#25945;&#26371;&#23559;&#35373;&#31435;&#31820;&#27454;&#35469;&#29563;</strong>&#65292;&#20197;&#31820;&#38598;5&#26376;&#20221;&#22312;&#38738;&#24180;&#29151;&#21450;5&#26376;&#20221;&#22312;&#38738;&#24180;&#30701;&#23459;&#38538;&#26381;&#20107;&#30340;&#25104;&#20154;&#38936;&#34966;&#30340;&#29151;&#36027;&#21450;&#26053;&#36027;&#12290;&#25130;&#27490;&#26085;&#26399;&#65306;2026&#24180;4&#26376;30&#26085;&#65292;&#26143;&#26399;&#22235;&#12290;
+          </li>
+          <li>
+            <strong>&#26257;&#26399;&#20818;&#31461;&#32854;&#32147;&#29677;</strong>
+            <ul>
+              <li>&#20027;&#38988;&#65306;Rome: Paul &amp; Underground Church</li>
+              <li>&#26085;&#26399;&#65306;8&#26376;24-28&#26085;
+                &#65288;&#26143;&#26399;&#19968;&#33267;&#20116;&#65289;</li>
+              <li>&#26178;&#38291;&#65306;&#26089;&#19978; 9&#26178;&#33267;&#19979;&#21320;3&#26178;</li>
+              <li>&#36969;&#21512;&#20170;&#24180;9&#26376;&#20221;&#20837;&#35712;
+                1-5&#24180;&#32026;&#30340;&#20818;&#31461;</li>
+              <li>&#25910;&#36027;&#65306;&#27599;&#20301;$99
+                &#65288;&#21512;&#36039;&#26684;&#30340;5&#20491;&#23478;&#24237;&#21487;&#29554;&#36039;&#21161;&#65289;
+              </li>
+              <li>&#21517;&#38989;&#26377;&#38480;&#12290;&#25130;&#27490;&#65306;5&#26376;31&#26085;</li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Previous / Next navigation -->
+    <nav class="news-nav" aria-label="News navigation">
+      <a class="news-nav__link" href="t9-news-detail.html">
+        <span class="news-nav__label">
+          <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M10 3L5 8l5 5" />
+          </svg>
+          Previous
+        </span>
+        <span class="news-nav__title">2026&#24180;4&#26376;5&#26085; &#20027;&#26085;&#23815;&#25308;</span>
+      </a>
+      <a class="news-nav__link news-nav__link--next" href="t9-news-detail.html">
+        <span class="news-nav__label">
+          Next
+          <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M6 3l5 5-5 5" />
+          </svg>
+        </span>
+        <span class="news-nav__title">2026&#24180;3&#26376;28&#12289;29&#26085; &#23815;&#25308;</span>
+      </a>
+    </nav>
+
+  </div>
+
+  <footer class="site-footer">
+    <div class="site-footer__inner">
+      <div class="site-footer__brand">
+        <img class="site-footer__logo" src="logo_light.png" alt="Westside Baptist Church logo">
+        <h4>Westside Baptist Church</h4>
+        <p class="body-text-sm">8506 Ash Street, Vancouver, BC V6P 3M2</p>
+        <div class="site-footer__util">
+          <a href="https://maps.google.com/?q=8506+Ash+Street+Vancouver+BC" target="_blank"><svg viewBox="0 0 16 16"
+              fill="none" stroke="currentColor" stroke-width="1.5">
+              <path d="M8 2a4 4 0 014 4c0 3-4 7-4 7s-4-4-4-7a4 4 0 014-4z" />
+              <circle cx="8" cy="6" r="1.5" />
+            </svg> Get Directions</a>
+          <a href="#"><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5">
+              <rect x="2" y="5" width="12" height="8" rx="1" />
+              <path d="M5 5V4a3 3 0 016 0v1" />
+            </svg> Parking Info</a>
+        </div>
+        <p class="body-text-sm">A young, vibrant, dynamic and friendly church serving the multicultural population in
+          Vancouver.</p>
+      </div>
+      <div class="site-footer__links">
+        <h4>Quick Links</h4>
+        <a href="t4-media.html">Sermons</a>
+        <a href="t8-event-list.html">Events</a>
+        <a href="t7-member.html">Member Area</a>
+        <a href="t2-content.html">About Us</a>
+        <a href="t6-form.html">Give</a>
+      </div>
+      <div class="site-footer__contact">
+        <h4>Contact Us</h4>
+        <p class="body-text-sm">info@westsidebaptist.ca</p>
+        <p class="body-text-sm">604-266-5602</p>
+        <p class="body-text-sm site-footer__office-hours">Office Hours:<br>Tue-Fri 10am-6pm<br>Sat 10am-4pm</p>
+        <div class="site-footer__social">
+          <a href="https://facebook.com/westsidebaptist.ca" target="_blank" aria-label="Facebook"><svg
+              viewBox="0 0 24 24" fill="currentColor">
+              <path
+                d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z" />
+            </svg></a>
+          <a href="https://instagram.com/westsidebaptist" target="_blank" aria-label="Instagram"><svg
+              viewBox="0 0 24 24" fill="currentColor">
+              <path
+                d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z" />
+            </svg></a>
+        </div>
+      </div>
+    </div>
+    <div class="site-footer__bottom">
+      <p class="caption">&copy; 2026 Westside Baptist Church. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script defer src="ui-components.js"></script>
+</body>
+
+</html>

@@ -41,3 +41,14 @@ $w.onReady(() => {
 - Ensure `$w.onReady()` is not overridden by any page-level script.
 - The page router uses **session storage** to track the previous page's language and parent URL for cross-language redirect logic.
 - Menu items are cached in **local storage** and invalidated automatically on site revision changes.
+
+## Local Dev Server
+
+Preview the design templates locally:
+
+```bash
+python dev/serve.py              # http://127.0.0.1:8111
+python dev/serve.py --port 3000  # custom port
+```
+
+Then open any template in the browser, e.g. `http://127.0.0.1:8000/t1-homepage.html`.

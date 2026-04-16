@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>T5: Team Profiles</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Outfit:wght@400;500;600;700&display=swap">
+  <link rel="stylesheet" href="design-system.css">
+</head>
+
+<body>
+
+  <a class="skip-link" href="#main-content">Skip to content</a>
+
+  <!-- ORGANISM: Global Navigation Header -->
+  <nav class="global-header">
+    <a class="global-header__logo" href="t1-homepage.html">
+      <span class="global-header__logo-text">Westside Baptist Church</span>
+    </a>
+    <div class="nav-link-group">
+      <div class="nav-item">
+        <a class="nav-link" href="t1-homepage.html">Welcome</a>
+      </div>
+      <div class="nav-item">
+        <a class="nav-link" href="t8-event-list.html">Events</a>
+      </div>
+      <div class="nav-item">
+        <a class="nav-link" href="t2-content.html">Worship</a>
+      </div>
+      <div class="nav-item">
+        <a class="nav-link" href="t4-media.html">Sermon</a>
+      </div>
+      <div class="nav-item">
+        <a class="nav-link" href="#">
+          Ministries
+          <svg class="chevron" viewBox="0 0 10 6" fill="none" stroke="currentColor" stroke-width="1.5">
+            <path d="M1 1l4 4 4-4" />
+          </svg>
+        </a>
+        <div class="nav-dropdown">
+          <a class="nav-dropdown__link" href="t3-grid.html">Overview</a>
+          <div class="nav-dropdown__divider"></div>
+          <a class="nav-dropdown__link" href="t2-content.html">Small Groups</a>
+          <a class="nav-dropdown__link" href="t2-content.html">Youth Ministry</a>
+          <a class="nav-dropdown__link" href="t2-content.html">Children (CitRUs)</a>
+          <a class="nav-dropdown__link" href="t2-content.html">Prayer Ministry</a>
+          <a class="nav-dropdown__link" href="t2-content.html">Believer Education</a>
+          <a class="nav-dropdown__link" href="t2-dark.html">HK New Immigrant</a>
+        </div>
+      </div>
+      <div class="nav-item">
+        <a class="nav-link" href="#">
+          About
+          <svg class="chevron" viewBox="0 0 10 6" fill="none" stroke="currentColor" stroke-width="1.5">
+            <path d="M1 1l4 4 4-4" />
+          </svg>
+        </a>
+        <div class="nav-dropdown">
+          <a class="nav-dropdown__link" href="t2-content.html">About Us</a>
+          <a class="nav-dropdown__link" href="t5-team.html">Pastoral Team</a>
+          <a class="nav-dropdown__link" href="t2-content.html">Contact</a>
+          <a class="nav-dropdown__link" href="t2-content.html">Visit Us</a>
+        </div>
+      </div>
+      <div class="nav-item">
+        <a class="nav-link" href="#">
+          Connect
+          <svg class="chevron" viewBox="0 0 10 6" fill="none" stroke="currentColor" stroke-width="1.5">
+            <path d="M1 1l4 4 4-4" />
+          </svg>
+        </a>
+        <div class="nav-dropdown">
+          <a class="nav-dropdown__link" href="t9-news-list.html">News</a>
+          <a class="nav-dropdown__link" href="t6-form.html">Guest Form</a>
+          <a class="nav-dropdown__link" href="t7-member.html">Member Area</a>
+        </div>
+      </div>
+    </div>
+    <div class="global-header__actions">
+      <a class="btn-accent" href="t6-form.html">C.T.A</a>
+      <button class="btn-icon mobile-menu-toggle" aria-label="Open menu">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <path d="M3 12h18M3 6h18M3 18h18" />
+        </svg>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Fullscreen mobile navigation overlay -->
+  <div class="mobile-nav" id="mobileNav">
+    <div class="mobile-nav__header">
+      <img class="mobile-nav__logo" src="logo_light.png" alt="Westside Baptist Church">
+      <button class="mobile-nav__close" aria-label="Close menu">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <path d="M18 6L6 18M6 6l12 12" />
+        </svg>
+      </button>
+    </div>
+    <div class="mobile-nav__body">
+      <a class="mobile-nav__link" href="t1-homepage.html">Welcome</a>
+      <a class="mobile-nav__link" href="t8-event-list.html">Events</a>
+      <a class="mobile-nav__link" href="t2-content.html">Worship</a>
+      <a class="mobile-nav__link" href="t4-media.html">Sermon</a>
+
+      <!-- Ministries accordion -->
+      <a class="mobile-nav__link" href="#">
+        Ministries
+        <svg class="chevron" viewBox="0 0 10 6" fill="none" stroke="currentColor" stroke-width="1.5">
+          <path d="M1 1l4 4 4-4" />
+        </svg>
+      </a>
+      <div class="mobile-nav__sub">
+        <a href="t3-grid.html">Overview</a>
+        <hr class="nav-dropdown__divider">
+        <a href="t2-content.html">Small Groups</a>
+        <a href="t2-content.html">Youth Ministry</a>
+        <a href="t2-content.html">Children (CitRUs)</a>
+        <a href="t2-content.html">Prayer Ministry</a>
+        <a href="t2-content.html">Believer Education</a>
+        <a href="t2-dark.html">HK New Immigrant</a>
+      </div>
+
+      <!-- About accordion -->
+      <a class="mobile-nav__link" href="#">
+        About
+        <svg class="chevron" viewBox="0 0 10 6" fill="none" stroke="currentColor" stroke-width="1.5">
+          <path d="M1 1l4 4 4-4" />
+        </svg>
+      </a>
+      <div class="mobile-nav__sub">
+        <a href="t2-content.html">About Us</a>
+        <a href="t5-team.html">Pastoral Team</a>
+        <a href="t2-content.html">Contact</a>
+        <a href="t2-content.html">Visit Us</a>
+      </div>
+
+      <!-- Connect accordion -->
+      <a class="mobile-nav__link" href="#">
+        Connect
+        <svg class="chevron" viewBox="0 0 10 6" fill="none" stroke="currentColor" stroke-width="1.5">
+          <path d="M1 1l4 4 4-4" />
+        </svg>
+      </a>
+      <div class="mobile-nav__sub">
+        <a href="t9-news-list.html">News</a>
+        <a href="t6-form.html">Guest Form</a>
+        <a href="t7-member.html">Member Area</a>
+      </div>
+    </div>
+    <div class="mobile-nav__footer">
+      <a class="btn-accent" href="t6-form.html">C.T.A</a>
+    </div>
+  </div>
+
+  <!-- ============================================================
+       ORGANISM: Hero Banner (Internal - 40vh)
+       ============================================================ -->
+  <header class="hero-banner"
+    style="background-image: url('https://images.unsplash.com/photo-1438232992991-995b7058bbb3?w=1920&q=80');"
+    id="main-content">
+    <div class="hero-banner__overlay"></div>
+    <div class="hero-banner__content">
+      <h1 class="page-title">T5: Team Profiles [CMS]</h1>
+      <p class="body-text">Showcases people with circular headshots, names, roles, and bios. Used for pastoral staff,
+        ministry teams, and leadership directories.</p>
+    </div>
+  </header>
+  <div class="hero-subtitle-mobile">
+    <p class="body-text">Showcases people with circular headshots, names, roles, and bios. Used for pastoral staff,
+      ministry teams, and leadership directories.</p>
+  </div>
+
+  <!-- ============================================================
+       T5-SPECIFIC: Profile Grid
+       Displays team members as circular-headshot profile cards.
+       MOLECULE: profile-bio
+       ============================================================ -->
+  <div class="grid-header">
+    <h2 class="section-title">Pastoral Staff</h2>
+    <p class="body-text">Our pastoral team has been faithfully serving the Westside Baptist community since its founding
+      in 1990. Click on a profile to read their full biography.</p>
+  </div>
+
+  <div class="grid-container">
+
+    <!-- Profile 1: Senior Pastor -->
+    <div class="profile-bio" data-modal="modal-gladys">
+      <img class="img-profile" src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=400&q=80"
+        alt="Rev. Dr. Gladys Lee Tsang headshot" loading="lazy" decoding="async">
+      <h3 class="profile-name">Rev. Dr. Gladys Lee Tsang</h3>
+      <span class="meta-text">Senior Pastor &middot; Founding Pastor</span>
+      <p class="body-text-sm">Called by denomination to lead Westside from its founding in 1990. Ordained in 1992, the
+        same day Westside Baptist Church was officially chartered as a congregation.</p>
+      <a class="btn-outline" href="#">Read Full Bio</a>
+    </div>
+
+    <!-- Profile 2: Associate Pastor -->
+    <div class="profile-bio" data-modal="modal-anders">
+      <img class="img-profile" src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=400&q=80"
+        alt="Rev. Anders Tsang headshot" loading="lazy" decoding="async">
+      <h3 class="profile-name">Rev. Anders Tsang</h3>
+      <span class="meta-text">Associate Pastor (Retired)</span>
+      <p class="body-text-sm">Graduated from Regent College and called as Associate Pastor in 2001. Ordained in 2004.
+        Officially retired in 2019 after decades of faithful service to the church.</p>
+      <a class="btn-outline" href="#">Read Full Bio</a>
+    </div>
+
+    <!-- Profile 3: Pastor -->
+    <div class="profile-bio" data-modal="modal-alan">
+      <img class="img-profile" src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&q=80"
+        alt="Rev. Dr. Alan C. Yu headshot" loading="lazy" decoding="async">
+      <h3 class="profile-name">Rev. Dr. Alan C. Yu</h3>
+      <span class="meta-text">Pastor</span>
+      <p class="body-text-sm">Long-time church member who began as a part-time pastoral intern in 2009. Called as the
+        third full-time pastor in 2011 and ordained in 2014.</p>
+      <a class="btn-outline" href="#">Read Full Bio</a>
+    </div>
+
+    <!-- Profile 4: Youth/English Pastor -->
+    <div class="profile-bio" data-modal="modal-mark">
+      <img class="img-profile" src="https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?w=400&q=80"
+        alt="Pastor Mark Wong headshot" loading="lazy" decoding="async">
+      <h3 class="profile-name">Pastor Mark Wong</h3>
+      <span class="meta-text">English &amp; Youth Ministry Pastor</span>
+      <p class="body-text-sm">Previously joined as a pastoral intern and returned to become the fourth full-time pastor
+        in 2022. Serves the English congregation and youth ministry.</p>
+      <a class="btn-outline" href="#">Read Full Bio</a>
+    </div>
+
+  </div>
+
+  <!-- ============================================================
+       T5-SPECIFIC: Modal for expanded profile bios
+       ORGANISM: modal
+       ============================================================ -->
+
+  <!-- Modal: Gladys -->
+  <div class="modal" id="modal-gladys" role="dialog" aria-modal="true" aria-labelledby="modal-gladys-title">
+    <div class="modal__overlay"></div>
+    <div class="modal__content">
+      <button class="btn-icon modal__close" aria-label="Close">&times;</button>
+      <div class="modal__header">
+        <img class="img-profile" src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=400&q=80"
+          alt="Rev. Dr. Gladys Lee Tsang" loading="lazy" decoding="async">
+        <h2 class="section-title" id="modal-gladys-title">Rev. Dr. Gladys Lee Tsang</h2>
+        <span class="meta-text">Senior Pastor &middot; Founding Pastor</span>
+      </div>
+      <hr class="divider">
+      <p class="body-text">Rev. Dr. Gladys Lee Tsang was called by the Canadian Baptist denomination to lead the church
+        planting effort that would become Westside Baptist Church. In September 1990, the church was officially planted
+        among the Chinese community on the west side of Vancouver.</p>
+      <p class="body-text">On the same day that Westside was officially chartered as a congregation in 1992, Gladys was
+        ordained as pastor. She has led the church through remarkable growth and transformation over three decades,
+        including the purchase of the church building at 8506 Ash Street in 2004, the launch of the English congregation
+        in 2012, and the development of ministries to serve Hong Kong immigrants beginning in 2021.</p>
+      <p class="body-text">Under her leadership, Westside Baptist has grown from a small church plant into a vibrant,
+        multicultural community that serves the Marpole neighbourhood and beyond.</p>
+    </div>
+  </div>
+
+  <!-- Modal: Anders -->
+  <div class="modal" id="modal-anders" role="dialog" aria-modal="true" aria-labelledby="modal-anders-title">
+    <div class="modal__overlay"></div>
+    <div class="modal__content">
+      <button class="btn-icon modal__close" aria-label="Close">&times;</button>
+      <div class="modal__header">
+        <img class="img-profile" src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=400&q=80"
+          alt="Rev. Anders Tsang" loading="lazy" decoding="async">
+        <h2 class="section-title" id="modal-anders-title">Rev. Anders Tsang</h2>
+        <span class="meta-text">Associate Pastor (Retired)</span>
+      </div>
+      <hr class="divider">
+      <p class="body-text">Rev. Anders Tsang finished his studies at Regent College and felt the call to pastoral
+        ministry. He was called as Associate Pastor at Westside Baptist in 2001 and was ordained in 2004.</p>
+      <p class="body-text">Throughout his tenure, Anders served faithfully alongside the pastoral team, contributing to
+        preaching, pastoral care, and the administration of church life. He officially retired in 2019 and has since
+        served as interim pastor when needed, demonstrating his ongoing commitment to the Westside family.</p>
+    </div>
+  </div>
+
+  <!-- Modal: Alan -->
+  <div class="modal" id="modal-alan" role="dialog" aria-modal="true" aria-labelledby="modal-alan-title">
+    <div class="modal__overlay"></div>
+    <div class="modal__content">
+      <button class="btn-icon modal__close" aria-label="Close">&times;</button>
+      <div class="modal__header">
+        <img class="img-profile" src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&q=80"
+          alt="Rev. Dr. Alan C. Yu" loading="lazy" decoding="async">
+        <h2 class="section-title" id="modal-alan-title">Rev. Dr. Alan C. Yu</h2>
+        <span class="meta-text">Pastor</span>
+      </div>
+      <hr class="divider">
+      <p class="body-text">Rev. Dr. Alan C. Yu has been a long-time member of Westside Baptist Church. In 2009, he began
+        serving as a part-time pastoral intern while continuing his theological education.</p>
+      <p class="body-text">Recognizing his gifts and calling, the church called Alan as the third full-time pastor in
+        2011. He was ordained in 2014. Alan has been instrumental in preaching, teaching, and leading various ministries
+        including the sermon series on kingdom principles that has been a cornerstone of the church's teaching ministry.
+      </p>
+    </div>
+  </div>
+
+  <!-- Modal: Mark -->
+  <div class="modal" id="modal-mark" role="dialog" aria-modal="true" aria-labelledby="modal-mark-title">
+    <div class="modal__overlay"></div>
+    <div class="modal__content">
+      <button class="btn-icon modal__close" aria-label="Close">&times;</button>
+      <div class="modal__header">
+        <img class="img-profile" src="https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?w=400&q=80"
+          alt="Pastor Mark Wong" loading="lazy" decoding="async">
+        <h2 class="section-title" id="modal-mark-title">Pastor Mark Wong</h2>
+        <span class="meta-text">English &amp; Youth Ministry Pastor</span>
+      </div>
+      <hr class="divider">
+      <p class="body-text">Pastor Mark Wong first joined Westside Baptist as a pastoral intern. After gaining experience
+        and completing his pastoral preparation, he returned to Westside and was called as the fourth full-time pastor
+        in 2022.</p>
+      <p class="body-text">Mark serves primarily in the English congregation and youth ministry. His energy,
+        relatability, and passion for the next generation have been vital to the growth of the English-language ministry
+        and youth programs at Westside Baptist.</p>
+    </div>
+  </div>
+
+  <footer class="site-footer">
+    <div class="site-footer__inner">
+      <div class="site-footer__brand">
+        <img class="site-footer__logo" src="logo_light.png" alt="Westside Baptist Church logo">
+        <h4>Westside Baptist Church</h4>
+        <p class="body-text-sm">8506 Ash Street, Vancouver, BC V6P 3M2</p>
+        <div class="site-footer__util">
+          <a href="https://maps.google.com/?q=8506+Ash+Street+Vancouver+BC" target="_blank"><svg viewBox="0 0 16 16"
+              fill="none" stroke="currentColor" stroke-width="1.5">
+              <path d="M8 2a4 4 0 014 4c0 3-4 7-4 7s-4-4-4-7a4 4 0 014-4z" />
+              <circle cx="8" cy="6" r="1.5" />
+            </svg> Get Directions</a>
+          <a href="#"><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5">
+              <rect x="2" y="5" width="12" height="8" rx="1" />
+              <path d="M5 5V4a3 3 0 016 0v1" />
+            </svg> Parking Info</a>
+        </div>
+        <p class="body-text-sm">A young, vibrant, dynamic and friendly church serving the multicultural population in
+          Vancouver.</p>
+      </div>
+      <div class="site-footer__links">
+        <h4>Quick Links</h4>
+        <a href="t4-media.html">Sermons</a>
+        <a href="t8-event-list.html">Events</a>
+        <a href="t7-member.html">Member Area</a>
+        <a href="t2-content.html">About Us</a>
+        <a href="t6-form.html">Give</a>
+      </div>
+      <div class="site-footer__contact">
+        <h4>Contact Us</h4>
+        <p class="body-text-sm">info@westsidebaptist.ca</p>
+        <p class="body-text-sm">604-266-5602</p>
+        <p class="body-text-sm site-footer__office-hours">Office Hours:<br>Tue-Fri 10am-6pm<br>Sat 10am-4pm</p>
+        <div class="site-footer__social">
+          <a href="https://facebook.com/westsidebaptist.ca" target="_blank" aria-label="Facebook"><svg
+              viewBox="0 0 24 24" fill="currentColor">
+              <path
+                d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z" />
+            </svg></a>
+          <a href="https://instagram.com/westsidebaptist" target="_blank" aria-label="Instagram"><svg
+              viewBox="0 0 24 24" fill="currentColor">
+              <path
+                d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z" />
+            </svg></a>
+        </div>
+      </div>
+    </div>
+    <div class="site-footer__bottom">
+      <p class="caption">&copy; 2026 Westside Baptist Church. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script defer src="ui-components.js"></script>
+</body>
+
+</html>
