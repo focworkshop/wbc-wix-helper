@@ -1,0 +1,1 @@
+- [Template & CSS consistency rule](feedback_template_consistency.md) — All UI/styling changes must propagate across all templates; reuse existing styles; CSS must be systematic with variables for easy theming
